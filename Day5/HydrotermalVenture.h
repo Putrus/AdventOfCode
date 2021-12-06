@@ -15,7 +15,6 @@ private:
 public:
    HydrotermalVenture();
    void loadInput(const char* filename);
-   std::vector<int> split(std::string str);
    int getResultPart1();
    void printDiagram();
 };

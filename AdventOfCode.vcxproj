@@ -139,15 +139,39 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Day1\SonarSweep.cpp" />
+    <ClCompile Include="Day2\Dive.cpp" />
+    <ClCompile Include="Day3\BinaryDiagnostic.cpp" />
+    <ClCompile Include="Day4\GiantSquid.cpp" />
     <ClCompile Include="Day5\HydrotermalVenture.cpp" />
+    <ClCompile Include="Day6\Lanternfish.cpp" />
+    <ClCompile Include="Day6\Utilities.cpp" />
+    <ClCompile Include="Decorator\Decorator.cpp" />
+    <ClCompile Include="Decorator\NoTask.cpp" />
+    <ClCompile Include="Decorator\Task.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Day1\SonarSweep.h" />
+    <ClInclude Include="Day2\Dive.h" />
+    <ClInclude Include="Day3\BinaryDiagnostic.h" />
+    <ClInclude Include="Day4\GiantSquid.h" />
     <ClInclude Include="Day5\HydrotermalVenture.h" />
+    <ClInclude Include="Day6\Lanternfish.h" />
+    <ClInclude Include="Day6\Utilities.h" />
+    <ClInclude Include="Decorator\Decorator.h" />
+    <ClInclude Include="Decorator\InterfaceTask.h" />
+    <ClInclude Include="Decorator\NoTask.h" />
+    <ClInclude Include="Decorator\Task.h" />
   </ItemGroup>
   <ItemGroup>
+    <Text Include="Day1\SonarSweepInput.txt" />
+    <Text Include="Day2\DiveInput.txt" />
+    <Text Include="Day3\BinaryDiagnosticInput.txt" />
+    <Text Include="Day4\GiantSquidInput.txt" />
     <Text Include="Day5\Input.txt" />
     <Text Include="Day5\TestInput.txt" />
+    <Text Include="Day6\Input.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

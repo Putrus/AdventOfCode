@@ -13,6 +13,12 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Day3">
+      <UniqueIdentifier>{0a1d6192-20ef-4e7c-9ef6-d2115294628c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Day4">
+      <UniqueIdentifier>{2c3b14a8-0fd8-4916-97d6-cffbc5514d91}</UniqueIdentifier>
+    </Filter>
     <Filter Include="Day1">
       <UniqueIdentifier>{e6f17654-7c34-4750-bec6-a2298c12c54d}</UniqueIdentifier>
     </Filter>
@@ -22,14 +28,14 @@
     <Filter Include="Day5">
       <UniqueIdentifier>{e238c22b-a1c8-4b99-8d48-eaddbac36f84}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Day4">
-      <UniqueIdentifier>{2c3b14a8-0fd8-4916-97d6-cffbc5514d91}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Day6">
       <UniqueIdentifier>{d119af71-d88b-4244-b41f-1e680ca5fc77}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Day3">
-      <UniqueIdentifier>{0a1d6192-20ef-4e7c-9ef6-d2115294628c}</UniqueIdentifier>
+    <Filter Include="Utilities">
+      <UniqueIdentifier>{678a02e0-fa9f-43e4-987e-32b743e822d5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Decorator">
+      <UniqueIdentifier>{3d191a9b-da99-422e-885e-069c9be9182d}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -39,10 +45,67 @@
     <ClCompile Include="Day5\HydrotermalVenture.cpp">
       <Filter>Day5</Filter>
     </ClCompile>
+    <ClCompile Include="Day1\SonarSweep.cpp">
+      <Filter>Day1</Filter>
+    </ClCompile>
+    <ClCompile Include="Day2\Dive.cpp">
+      <Filter>Day2</Filter>
+    </ClCompile>
+    <ClCompile Include="Day3\BinaryDiagnostic.cpp">
+      <Filter>Day3</Filter>
+    </ClCompile>
+    <ClCompile Include="Day4\GiantSquid.cpp">
+      <Filter>Day4</Filter>
+    </ClCompile>
+    <ClCompile Include="Day6\Lanternfish.cpp">
+      <Filter>Day6</Filter>
+    </ClCompile>
+    <ClCompile Include="Day6\Utilities.cpp">
+      <Filter>Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="Decorator\Decorator.cpp">
+      <Filter>Decorator</Filter>
+    </ClCompile>
+    <ClCompile Include="Decorator\Task.cpp">
+      <Filter>Decorator</Filter>
+    </ClCompile>
+    <ClCompile Include="Decorator\NoTask.cpp">
+      <Filter>Decorator</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Day5\HydrotermalVenture.h">
       <Filter>Day5</Filter>
+    </ClInclude>
+    <ClInclude Include="Day1\SonarSweep.h">
+      <Filter>Day1</Filter>
+    </ClInclude>
+    <ClInclude Include="Day2\Dive.h">
+      <Filter>Day2</Filter>
+    </ClInclude>
+    <ClInclude Include="Day3\BinaryDiagnostic.h">
+      <Filter>Day3</Filter>
+    </ClInclude>
+    <ClInclude Include="Day4\GiantSquid.h">
+      <Filter>Day4</Filter>
+    </ClInclude>
+    <ClInclude Include="Day6\Lanternfish.h">
+      <Filter>Day6</Filter>
+    </ClInclude>
+    <ClInclude Include="Day6\Utilities.h">
+      <Filter>Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="Decorator\Decorator.h">
+      <Filter>Decorator</Filter>
+    </ClInclude>
+    <ClInclude Include="Decorator\Task.h">
+      <Filter>Decorator</Filter>
+    </ClInclude>
+    <ClInclude Include="Decorator\InterfaceTask.h">
+      <Filter>Decorator</Filter>
+    </ClInclude>
+    <ClInclude Include="Decorator\NoTask.h">
+      <Filter>Decorator</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -51,6 +114,21 @@
     </Text>
     <Text Include="Day5\TestInput.txt">
       <Filter>Day5</Filter>
+    </Text>
+    <Text Include="Day1\SonarSweepInput.txt">
+      <Filter>Day1</Filter>
+    </Text>
+    <Text Include="Day2\DiveInput.txt">
+      <Filter>Day2</Filter>
+    </Text>
+    <Text Include="Day3\BinaryDiagnosticInput.txt">
+      <Filter>Day3</Filter>
+    </Text>
+    <Text Include="Day4\GiantSquidInput.txt">
+      <Filter>Day4</Filter>
+    </Text>
+    <Text Include="Day6\Input.txt">
+      <Filter>Day6</Filter>
     </Text>
   </ItemGroup>
 </Project>

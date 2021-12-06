@@ -12,33 +12,20 @@ HydrotermalVenture::HydrotermalVenture() {
 
 void HydrotermalVenture::loadInput(const char* filename) {
    std::ifstream file(filename);
-   lines.clear();
-   std::string p1;
-   std::string arrow;
-   std::string p2;
-   std::vector<int> split1;
-   std::vector<int> split2;
-   while (!file.eof()) {
-      file >> p1 >> arrow >> p2;
-      split1 = split(p1);
-      split2 = split(p2);
-      lines.push_back({ split1[0], split1[1], split2[0], split2[1] });
-   }
-   lines.erase(lines.end() - 1);
+   //lines.clear();
+   //std::string p1;
+   //std::string arrow;
+   //std::string p2;
+   //std::vector<int> split1;
+   //std::vector<int> split2;
+   //while (!file.eof()) {
+   //   file >> p1 >> arrow >> p2;
+   //   split1 = split(p1);
+   //   split2 = split(p2);
+   //   lines.push_back({ split1[0], split1[1], split2[0], split2[1] });
+   //}
+   //lines.erase(lines.end() - 1);
    file.close();
-}
-
-std::vector<int> HydrotermalVenture::split(std::string str) {
-   int last = 0;
-   std::vector<int> result;
-   for (size_t i = 0; i < str.length(); ++i) {
-      if (str[i] == ',') {
-         result.push_back(atoi(str.substr(last, i - last).c_str()));
-         last = i + 1;
-      }
-   }
-   result.push_back(atoi(str.substr(last, str.length() - last).c_str()));
-   return result;
 }
 
 int HydrotermalVenture::getResultPart1() {
