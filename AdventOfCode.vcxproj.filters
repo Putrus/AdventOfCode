@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Day1">
+      <UniqueIdentifier>{e6f17654-7c34-4750-bec6-a2298c12c54d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Day2">
+      <UniqueIdentifier>{92b092dd-5e78-4508-8593-5ab2929cd9bd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Day5">
+      <UniqueIdentifier>{e238c22b-a1c8-4b99-8d48-eaddbac36f84}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Day4">
+      <UniqueIdentifier>{2c3b14a8-0fd8-4916-97d6-cffbc5514d91}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Day6">
+      <UniqueIdentifier>{d119af71-d88b-4244-b41f-1e680ca5fc77}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Day3">
+      <UniqueIdentifier>{0a1d6192-20ef-4e7c-9ef6-d2115294628c}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Day5\HydrotermalVenture.cpp">
+      <Filter>Day5</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Day5\HydrotermalVenture.h">
+      <Filter>Day5</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="Day5\Input.txt">
+      <Filter>Day5</Filter>
+    </Text>
+    <Text Include="Day5\TestInput.txt">
+      <Filter>Day5</Filter>
+    </Text>
+  </ItemGroup>
+</Project>
