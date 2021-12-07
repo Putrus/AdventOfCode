@@ -17,6 +17,6 @@ private:
    int getResultPart1() override;
    int getResultPart2() override;
 
-   std::vector<int> createThrees();
    int getIncreases(const std::vector<int>& arr);
+   std::vector<int> createThrees();
 };

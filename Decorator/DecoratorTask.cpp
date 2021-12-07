@@ -8,6 +8,10 @@ DecoratorTask::~DecoratorTask() {
    delete task;
 }
 
+void DecoratorTask::printResults() {
+   task->printResults();
+}
+
 void DecoratorTask::loadInput(const char* filename) {
    return;
 }
@@ -18,10 +22,6 @@ int DecoratorTask::getResultPart1() {
 
 int DecoratorTask::getResultPart2() {
    return 0;
-}
-
-void DecoratorTask::printResults() {
-   task->printResults();
 }
 
 void DecoratorTask::printResultsArgs(const char * input, const char * taskName) {
