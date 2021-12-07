@@ -3,7 +3,12 @@
 #include <iostream>
 #include <fstream>
 
-Dive::Dive() : x(0), y(0), aim(0){}
+Dive::Dive(ComponentTask * task) : DecoratorTask(task), x(0), y(0), aim(0){}
+
+void Dive::printResults() {
+   printResultsArgs("Day2/Input.txt", "--- Day 2: Dive! ---");
+   task->printResults();
+}
 
 void Dive::loadInput(const char* filename) {
    std::ifstream file(filename);

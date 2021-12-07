@@ -1,5 +1,7 @@
 #pragma once
 
+#include "../Decorator/DecoratorTask.h"
+
 #include <vector>
 
 class Board {
@@ -11,15 +13,17 @@ public:
    std::vector<int> getUnmarkedWin(std::vector<int> numbers);
 };
 
-
-
-class GiantSquid {
+class GiantSquid : public DecoratorTask{
 private:
    std::vector<int> numbers;
    std::vector<Board> boards;
 
 public:
-   void loadInput(const char* filename);
-   int getResultPart1();
-   int getResultPart2();
+   GiantSquid(ComponentTask* task);
+   void printResults() override;
+
+private:
+   void loadInput(const char* filename) override;
+   int getResultPart1() override;
+   int getResultPart2() override;
 };

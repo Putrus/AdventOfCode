@@ -1,16 +1,22 @@
 #pragma once
 
+#include "../Decorator/DecoratorTask.h"
+
 #include <vector>
 
-class SonarSweep {
+class SonarSweep : public DecoratorTask{
 private:
    std::vector<int> depths;
-   std::vector<int> threes;
+
 public:
-   void loadInput(const char* filename);
-   int getResultPart1();
-   int getResultPart2();
+   SonarSweep(ComponentTask* task);
+   void printResults() override;
+
 private:
-   void createThrees();
-   int getIncreases(std::vector<int>& arr);
+   void loadInput(const char* filename) override;
+   int getResultPart1() override;
+   int getResultPart2() override;
+
+   std::vector<int> createThrees();
+   int getIncreases(const std::vector<int>& arr);
 };

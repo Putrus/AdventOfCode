@@ -1,13 +1,14 @@
 #pragma once
 
-#include "InterfaceTask.h"
+#include "ComponentTask.h"
 
-class NoTask : public InterfaceTask {
-protected:
-   void loadInput(const char* filename);
-   int getResultPart1();
-   int getResultPart2();
-
+//concrete component
+class NoTask : public ComponentTask {
+private:
+   void loadInput(const char* filename) override;
+   int getResultPart1() override;
+   int getResultPart2() override;
 public:
-   void printResults();
+   void printResults() override;
+   
 };

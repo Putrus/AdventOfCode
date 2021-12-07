@@ -4,6 +4,13 @@
 #include <iostream>
 #include <algorithm>
 
+BinaryDiagnostic::BinaryDiagnostic(ComponentTask* task) : DecoratorTask(task), gamma(0), epsilon(0) {}
+
+void BinaryDiagnostic::printResults() {
+   printResultsArgs("Day3/Input.txt", "--- Day 3: Binary Diagnostic ---");
+   task->printResults();
+}
+
 void BinaryDiagnostic::loadInput(const char* filename) {
    std::ifstream file(filename);
    while (!file.eof()) {
@@ -13,10 +20,6 @@ void BinaryDiagnostic::loadInput(const char* filename) {
    }
    diagnosticReport.erase(diagnosticReport.end() - 1);
    file.close();
-}
-
-void BinaryDiagnostic::test() {
-   diagnosticReport = { "00100", "11110", "10110", "10111", "10101", "01111", "00111", "11100", "10000", "11001", "00010", "01010" };
 }
 
 int BinaryDiagnostic::getResultPart1() {
@@ -68,7 +71,6 @@ int BinaryDiagnostic::getResultPart2() {
          epsilon = binaryToInt(elementWithCommonPart(co2));
       }
    }
-
    return gamma * epsilon;
 }
 

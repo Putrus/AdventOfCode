@@ -1,21 +1,25 @@
 #pragma once
 
+#include "../Decorator/DecoratorTask.h"
+
 #include <vector>
 #include <string>
 
-class BinaryDiagnostic {
+class BinaryDiagnostic : public DecoratorTask {
 private:
    std::vector<std::string> diagnosticReport;
    int gamma;
    int epsilon;
 
 public:
-   void loadInput(const char* filename);
-   void test();
-   int getResultPart1();
-   int getResultPart2();
+   BinaryDiagnostic(ComponentTask* task);
+   void printResults() override;
 
 private:
+   void loadInput(const char* filename) override;
+   int getResultPart1() override;
+   int getResultPart2() override;
+
    std::vector<int> createOnes();
    int countWithCommonPart(std::string part);
    int binaryToInt(std::string binary);

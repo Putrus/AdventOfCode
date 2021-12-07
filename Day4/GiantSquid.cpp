@@ -64,6 +64,13 @@ std::vector<int> Board::getUnmarkedWin(std::vector<int> numbers) {
    return {};
 }
 
+GiantSquid::GiantSquid(ComponentTask* task) : DecoratorTask(task) {}
+
+void GiantSquid::printResults() {
+   printResultsArgs("Day4/Input.txt", "--- Day 4: Giant Squid ---");
+   task->printResults();
+}
+
 void GiantSquid::loadInput(const char* filename) {
    std::ifstream file(filename);
    std::string numString;

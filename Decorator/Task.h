@@ -1,24 +1,23 @@
 #pragma once
 
-#include "Decorator.h"
+#include "DecoratorTask.h"
 #include "NoTask.h"
 
 #include <vector>
 
-enum class Day {
+enum class TaskName {
    SonarSweep = 1,
    Dive = 2,
    BinaryDiagnostic = 3,
    GiantSquid = 4,
-   HydrotermalVenture = 5,
+   HydrothermalVenture = 5,
    LanternFish = 6
 };
 
-
 class Task {
 private:
-   std::unique_ptr<InterfaceTask> task;
-
+   ComponentTask * task;
 public:
-   Task(const std::vector<Day>& tasks);
+   Task(std::vector<TaskName> tasks);
+   void printResults();
 };

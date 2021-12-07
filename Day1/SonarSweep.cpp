@@ -1,8 +1,13 @@
 #include "SonarSweep.h"
 
-#include <iostream>
 #include <fstream>
 
+SonarSweep::SonarSweep(ComponentTask *task) : DecoratorTask(task){}
+
+void SonarSweep::printResults() {
+   printResultsArgs("Day1/Input.txt", "--- Day 1: SonarSweep ---");
+   task->printResults();
+}
 
 void SonarSweep::loadInput(const char* filename) {
    std::ifstream file(filename);
@@ -15,7 +20,16 @@ void SonarSweep::loadInput(const char* filename) {
    file.close();
 }
 
-int SonarSweep::getIncreases(std::vector<int> &arr) {
+int SonarSweep::getResultPart1() {
+   return getIncreases(depths);
+}
+
+int SonarSweep::getResultPart2() {
+   std::vector<int> threes = createThrees();
+   return getIncreases(threes);
+}
+
+int SonarSweep::getIncreases(const std::vector<int>& arr) {
    int lastElement = 0;
    int result = 0;
    if (arr.size()) {
@@ -30,18 +44,10 @@ int SonarSweep::getIncreases(std::vector<int> &arr) {
    return result;
 }
 
-int SonarSweep::getResultPart1() {
-   return getIncreases(depths);
-}
-
-int SonarSweep::getResultPart2() {
-   createThrees();
-   return getIncreases(threes);
-}
-
-void SonarSweep::createThrees() {
-   threes.clear();
+std::vector<int> SonarSweep::createThrees() {
+   std::vector<int> threes;
    for (size_t i = 0; i < depths.size() - 2; ++i) {
-      threes.push_back(depths[i] + depths[i + 1] + depths[i + 2]);  
+      threes.push_back(depths[i] + depths[i + 1] + depths[i + 2]);
    }
+   return threes;
 }

@@ -42,7 +42,7 @@
     <ClCompile Include="main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Day5\HydrotermalVenture.cpp">
+    <ClCompile Include="Day5\HydrothermalVenture.cpp">
       <Filter>Day5</Filter>
     </ClCompile>
     <ClCompile Include="Day1\SonarSweep.cpp">
@@ -60,10 +60,7 @@
     <ClCompile Include="Day6\Lanternfish.cpp">
       <Filter>Day6</Filter>
     </ClCompile>
-    <ClCompile Include="Day6\Utilities.cpp">
-      <Filter>Utilities</Filter>
-    </ClCompile>
-    <ClCompile Include="Decorator\Decorator.cpp">
+    <ClCompile Include="Decorator\DecoratorTask.cpp">
       <Filter>Decorator</Filter>
     </ClCompile>
     <ClCompile Include="Decorator\Task.cpp">
@@ -72,9 +69,12 @@
     <ClCompile Include="Decorator\NoTask.cpp">
       <Filter>Decorator</Filter>
     </ClCompile>
+    <ClCompile Include="Utilities\Utilities.cpp">
+      <Filter>Utilities</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Day5\HydrotermalVenture.h">
+    <ClInclude Include="Day5\HydrothermalVenture.h">
       <Filter>Day5</Filter>
     </ClInclude>
     <ClInclude Include="Day1\SonarSweep.h">
@@ -92,20 +92,20 @@
     <ClInclude Include="Day6\Lanternfish.h">
       <Filter>Day6</Filter>
     </ClInclude>
-    <ClInclude Include="Day6\Utilities.h">
-      <Filter>Utilities</Filter>
-    </ClInclude>
-    <ClInclude Include="Decorator\Decorator.h">
+    <ClInclude Include="Decorator\DecoratorTask.h">
       <Filter>Decorator</Filter>
     </ClInclude>
     <ClInclude Include="Decorator\Task.h">
       <Filter>Decorator</Filter>
     </ClInclude>
-    <ClInclude Include="Decorator\InterfaceTask.h">
+    <ClInclude Include="Decorator\ComponentTask.h">
       <Filter>Decorator</Filter>
     </ClInclude>
     <ClInclude Include="Decorator\NoTask.h">
       <Filter>Decorator</Filter>
+    </ClInclude>
+    <ClInclude Include="Utilities\Utilities.h">
+      <Filter>Utilities</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -115,16 +115,16 @@
     <Text Include="Day5\TestInput.txt">
       <Filter>Day5</Filter>
     </Text>
-    <Text Include="Day1\SonarSweepInput.txt">
+    <Text Include="Day1\Input.txt">
       <Filter>Day1</Filter>
     </Text>
-    <Text Include="Day2\DiveInput.txt">
+    <Text Include="Day2\Input.txt">
       <Filter>Day2</Filter>
     </Text>
-    <Text Include="Day3\BinaryDiagnosticInput.txt">
+    <Text Include="Day3\Input.txt">
       <Filter>Day3</Filter>
     </Text>
-    <Text Include="Day4\GiantSquidInput.txt">
+    <Text Include="Day4\Input.txt">
       <Filter>Day4</Filter>
     </Text>
     <Text Include="Day6\Input.txt">
