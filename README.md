@@ -6,7 +6,7 @@ Each puzzle has two parts and solutions are numbers.
 
 Displaying the results to the console looks like this :
 
-![alt text](https://github.com/Putrus/AdventOfCode2021/blob/main/output.jpg?raw=true)
+![](https://github.com/Putrus/AdventOfCode2021/blob/7d1799661c8c62a3a4687b8384b0a4bf7634b812/output.jpg?raw=true)
 
 The decorator will work very nicely here, 
 because we just need to list the tasks in the constructor of the Task object that we want to display 
@@ -15,7 +15,7 @@ For each advent task, there is a class that has the methods loadInput, getResult
 the Decorator::printResultsArgs() method executes these methods and displays the result in a very nice format.
 I think instead of written form it is better to look at the diagram which I created with StarUML:
 
-![alt text](https://github.com/Putrus/AdventOfCode2021/blob/main/decorator.jpg?raw=true)
+![](https://github.com/Putrus/AdventOfCode2021/blob/7d1799661c8c62a3a4687b8384b0a4bf7634b812/decorator.jpg?raw=true)
 
 I hope you will like my solutions and the structure of this project. 
 All the best! 
