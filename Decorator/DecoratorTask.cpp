@@ -16,17 +16,23 @@ void DecoratorTask::loadInput(const char* filename) {
    return;
 }
 
-int DecoratorTask::getResultPart1() {
-   return 0;
+void DecoratorTask::printResultPart1() {
+   return;
 }
 
-int DecoratorTask::getResultPart2() {
-   return 0;
+void DecoratorTask::printResultPart2() {
+   return;
 }
 
 void DecoratorTask::printResultsArgs(const char * input, const char * taskName) {
       loadInput(input);
       std::cout << taskName << std::endl;
-      std::cout << "Part 1: " << getResultPart1() << std::endl;
-      std::cout << "Part 2: " << getResultPart2() << std::endl << std::endl;
+
+      std::cout << "Part 1: ";
+      printResultPart1(); 
+      std::cout << std::endl;
+
+      std::cout << "Part 2: ";
+      printResultPart2();
+      std::cout << std::endl;
 }

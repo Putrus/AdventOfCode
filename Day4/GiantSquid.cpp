@@ -1,6 +1,9 @@
 #include "GiantSquid.h"
 
+#include "../Utilities/Utilities.h"
+
 #include <fstream>
+#include <iostream>
 
 Board::Board() {
    for (int i = 0; i < 5; ++i) {
@@ -75,14 +78,8 @@ void GiantSquid::loadInput(const char* filename) {
    std::ifstream file(filename);
    std::string numString;
    file >> numString;
-   int last = 0;
-   for (size_t i = 0; i < numString.length(); ++i) {
-      if (numString[i] == ',') {
-         numbers.push_back(atoi(numString.substr(last, i - last).c_str()));
-         last = i + 1;
-      }
-   }
-   numbers.push_back(atoi(numString.substr(last, numString.length() - last).c_str()));
+   numbers.clear();
+   numbers = uti::split(numString);
    
    while (!file.eof()) {
       Board b;
@@ -101,7 +98,7 @@ void GiantSquid::loadInput(const char* filename) {
    file.close();
 }
 
-int GiantSquid::getResultPart1() {
+void GiantSquid::printResultPart1() {
    int sum = 0;
    int winNumber = 0;
    for (size_t i = 0; i < numbers.size(); ++i) {
@@ -113,14 +110,15 @@ int GiantSquid::getResultPart1() {
                   sum += number;
                }
                winNumber = numbersNow[numbersNow.size() - 1];
-               return sum * winNumber;
+               std::cout << sum * winNumber;
+               return;
             }
          }
    }
-   return 0;
+   std::cout << "0";
 }
 
-int GiantSquid::getResultPart2() {
+void GiantSquid::printResultPart2() {
    int sum = 0;
    int winNumber = 0;
    int counter = 0;
@@ -137,10 +135,11 @@ int GiantSquid::getResultPart2() {
                   sum += number;
                }
                winNumber = numbersNow[numbersNow.size() - 1];
-               return sum * winNumber;
+               std::cout << sum * winNumber;
+               return;
             }
          }
       }
    }
-   return 0;
+   std::cout << "0";
 }

@@ -4,12 +4,12 @@ void NoTask::loadInput(const char* filename) {
    return;
 }
 
-int NoTask::getResultPart1() {
-   return 0;
+void NoTask::printResultPart1() {
+   return;
 }
 
-int NoTask::getResultPart2() {
-   return 0;
+void NoTask::printResultPart2() {
+   return;
 }
 
 void NoTask::printResults() {

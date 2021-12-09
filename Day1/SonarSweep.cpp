@@ -1,6 +1,7 @@
 #include "SonarSweep.h"
 
 #include <fstream>
+#include <iostream>
 
 SonarSweep::SonarSweep(ComponentTask *task) : DecoratorTask(task){}
 
@@ -20,13 +21,13 @@ void SonarSweep::loadInput(const char* filename) {
    file.close();
 }
 
-int SonarSweep::getResultPart1() {
-   return getIncreases(depths);
+void SonarSweep::printResultPart1() {
+   std::cout << getIncreases(depths);
 }
 
-int SonarSweep::getResultPart2() {
+void SonarSweep::printResultPart2() {
    std::vector<int> threes = createThrees();
-   return getIncreases(threes);
+   std::cout << getIncreases(threes);
 }
 
 int SonarSweep::getIncreases(const std::vector<int>& arr) {

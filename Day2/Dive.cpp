@@ -22,7 +22,7 @@ void Dive::loadInput(const char* filename) {
    file.close();
 }
 
-int Dive::getResultPart1() {
+void Dive::printResultPart1() {
    x = 0;
    y = 0;
    for (auto const& command : commands) {
@@ -36,10 +36,10 @@ int Dive::getResultPart1() {
          y += command.second;
       }
    }
-   return x * y;
+   std::cout << x * y;
 }
 
-int Dive::getResultPart2() {
+void Dive::printResultPart2() {
    x = 0;
    y = 0;
    aim = 0;
@@ -55,5 +55,5 @@ int Dive::getResultPart2() {
          aim += command.second;
       }
    }
-   return x * y;
+   std::cout << x * y;
 }

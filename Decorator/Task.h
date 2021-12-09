@@ -11,7 +11,10 @@ enum class TaskName {
    BinaryDiagnostic = 3,
    GiantSquid = 4,
    HydrothermalVenture = 5,
-   LanternFish = 6
+   LanternFish = 6,
+   TheTreacheryOfWhales = 7,
+   SevenSegmentSearch = 8,
+   SmokeBasin = 9
 };
 
 class Task {

@@ -24,6 +24,6 @@ public:
 
 private:
    void loadInput(const char* filename) override;
-   int getResultPart1() override;
-   int getResultPart2() override;
+   void printResultPart1() override;
+   void printResultPart2() override;
 };

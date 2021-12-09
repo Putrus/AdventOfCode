@@ -22,7 +22,7 @@ void BinaryDiagnostic::loadInput(const char* filename) {
    file.close();
 }
 
-int BinaryDiagnostic::getResultPart1() {
+void BinaryDiagnostic::printResultPart1() {
    std::vector<int> ones = createOnes();
 
    int binary = 1;
@@ -31,10 +31,10 @@ int BinaryDiagnostic::getResultPart1() {
       epsilon += ((ones[i] > diagnosticReport.size() / 2) ? 0 : 1) * binary;
       binary *= 2;
    }
-   return gamma * epsilon;
+   std::cout << gamma * epsilon;
 }
 
-int BinaryDiagnostic::getResultPart2() {
+void BinaryDiagnostic::printResultPart2() {
    std::string oxygen = "";
    std::string co2 = "";
    std::vector<int> ones = createOnes();
@@ -71,7 +71,7 @@ int BinaryDiagnostic::getResultPart2() {
          epsilon = binaryToInt(elementWithCommonPart(co2));
       }
    }
-   return gamma * epsilon;
+   std::cout << gamma * epsilon;
 }
 
 std::vector<int> BinaryDiagnostic::createOnes() {

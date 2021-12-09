@@ -16,7 +16,7 @@ public:
 
 protected:
    virtual void loadInput(const char* filename) override;
-   virtual int getResultPart1() override;
-   virtual int getResultPart2() override;
+   virtual void printResultPart1() override;
+   virtual void printResultPart2() override;
    void printResultsArgs(const char* input, const char* taskName);
 };

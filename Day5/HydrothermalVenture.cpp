@@ -6,7 +6,7 @@
 HydrothermalVenture::HydrothermalVenture(ComponentTask* task) : DecoratorTask(task) {}
 
 void HydrothermalVenture::printResults() {
-   printResultsArgs("Day5/Input.txt", "--- Hydrothermal Venture ---");
+   printResultsArgs("Day5/Input.txt", "--- Day 5: Hydrothermal Venture ---");
    task->printResults();
 }
 
@@ -28,7 +28,7 @@ void HydrothermalVenture::loadInput(const char* filename) {
    file.close();
 }
 
-int HydrothermalVenture::getResultPart1() {
+void HydrothermalVenture::printResultPart1() {
    clearDiagram();
    for (auto const& line : lines) {  
       if (line.x1 == line.x2) {
@@ -42,10 +42,10 @@ int HydrothermalVenture::getResultPart1() {
          }
       }
    }
-   return countTwoLinesOverlap();
+   std::cout << countTwoLinesOverlap();
 }
 
-int HydrothermalVenture::getResultPart2() {
+void HydrothermalVenture::printResultPart2() {
    clearDiagram();
    for (int i = 0; i < 1000; ++i) {
       std::vector<int> row(1000, 0);
@@ -86,7 +86,7 @@ int HydrothermalVenture::getResultPart2() {
          }
       }
    }
-   return countTwoLinesOverlap();
+   std::cout << countTwoLinesOverlap();
 }
 
 void HydrothermalVenture::clearDiagram() {
