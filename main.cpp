@@ -9,7 +9,8 @@ int main() {
       TaskName::GiantSquid,
       TaskName::HydrothermalVenture,
       */TaskName::LanternFish,
-      TaskName::TheTreacheryOfWhales});
+      TaskName::TheTreacheryOfWhales,
+      TaskName::SevenSegmentSearch});
    task.printResults();
    return 0;
 }

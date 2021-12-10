@@ -21,7 +21,6 @@ void TheTreacheryOfWhales::loadInput(const char* filename) {
    crabs.clear();
    crabs = uti::split(numString);
    file.close();
-   //crabs = { 16 , 1, 2, 0, 4, 2, 7, 1, 2, 14 };
 }
 
 void TheTreacheryOfWhales::printResultPart1() {

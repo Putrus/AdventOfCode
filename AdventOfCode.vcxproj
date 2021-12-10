@@ -148,6 +148,7 @@
     <ClCompile Include="Day5\HydrothermalVenture.cpp" />
     <ClCompile Include="Day6\Lanternfish.cpp" />
     <ClCompile Include="Day7\TheTreacheryOfWhales.cpp" />
+    <ClCompile Include="Day8\SevenSegmentSearch.cpp" />
     <ClCompile Include="Decorator\DecoratorTask.cpp" />
     <ClCompile Include="Decorator\NoTask.cpp" />
     <ClCompile Include="Decorator\Task.cpp" />
@@ -162,6 +163,7 @@
     <ClInclude Include="Day5\HydrothermalVenture.h" />
     <ClInclude Include="Day6\Lanternfish.h" />
     <ClInclude Include="Day7\TheTreacheryOfWhales.h" />
+    <ClInclude Include="Day8\SevenSegmentSearch.h" />
     <ClInclude Include="Decorator\DecoratorTask.h" />
     <ClInclude Include="Decorator\ComponentTask.h" />
     <ClInclude Include="Decorator\NoTask.h" />
@@ -177,6 +179,8 @@
     <Text Include="Day5\TestInput.txt" />
     <Text Include="Day6\Input.txt" />
     <Text Include="Day7\Input.txt" />
+    <Text Include="Day8\Input.txt" />
+    <Text Include="Day8\TestInput.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
