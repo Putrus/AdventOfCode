@@ -8,7 +8,8 @@ int main() {
       TaskName::BinaryDiagnostic,
       TaskName::GiantSquid,
       TaskName::HydrothermalVenture,
-      */TaskName::LanternFish});
+      */TaskName::LanternFish,
+      TaskName::TheTreacheryOfWhales});
    task.printResults();
    return 0;
 }

@@ -37,6 +37,9 @@
     <Filter Include="Decorator">
       <UniqueIdentifier>{3d191a9b-da99-422e-885e-069c9be9182d}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Day7">
+      <UniqueIdentifier>{36d5291c-9f8c-4085-9d02-7744522f172e}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -71,6 +74,9 @@
     </ClCompile>
     <ClCompile Include="Utilities\Utilities.cpp">
       <Filter>Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="Day7\TheTreacheryOfWhales.cpp">
+      <Filter>Day7</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -107,6 +113,9 @@
     <ClInclude Include="Utilities\Utilities.h">
       <Filter>Utilities</Filter>
     </ClInclude>
+    <ClInclude Include="Day7\TheTreacheryOfWhales.h">
+      <Filter>Day7</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Text Include="Day5\Input.txt">
@@ -129,6 +138,9 @@
     </Text>
     <Text Include="Day6\Input.txt">
       <Filter>Day6</Filter>
+    </Text>
+    <Text Include="Day7\Input.txt">
+      <Filter>Day7</Filter>
     </Text>
   </ItemGroup>
 </Project>
