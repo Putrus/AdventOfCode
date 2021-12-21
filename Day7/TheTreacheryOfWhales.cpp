@@ -10,7 +10,7 @@
 TheTreacheryOfWhales::TheTreacheryOfWhales(ComponentTask* task) : DecoratorTask(task) {}
 
 void TheTreacheryOfWhales::printResults() {
-   printResultsArgs("Day7/Input.txt", "--- Day7: The Treachery of Whales ---");
+   printResultsArgs("Day7/Input.txt", "--- Day 7: The Treachery of Whales ---");
    task->printResults();
 }
 

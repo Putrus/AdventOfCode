@@ -10,7 +10,7 @@ Lanternfish::Lanternfish(ComponentTask* task) : DecoratorTask(task){
 }
 
 void Lanternfish::printResults() {
-   printResultsArgs("Day6/Input.txt", "--- Lanternfish ---");
+   printResultsArgs("Day6/Input.txt", "--- Day 6: Lanternfish ---");
    task->printResults();
 }
 

@@ -84,6 +84,9 @@
     <ClCompile Include="Day8\SevenSegmentSearch.cpp">
       <Filter>Day8</Filter>
     </ClCompile>
+    <ClCompile Include="Day9\SmokeBasin.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Day5\HydrothermalVenture.h">
@@ -125,6 +128,9 @@
     <ClInclude Include="Day8\SevenSegmentSearch.h">
       <Filter>Day8</Filter>
     </ClInclude>
+    <ClInclude Include="Day9\SmokeBasin.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Text Include="Day5\Input.txt">
@@ -157,5 +163,7 @@
     <Text Include="Day8\TestInput.txt">
       <Filter>Day8</Filter>
     </Text>
+    <Text Include="Day9\Input.txt" />
+    <Text Include="Day9\TestInput.txt" />
   </ItemGroup>
 </Project>

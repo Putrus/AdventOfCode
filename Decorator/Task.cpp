@@ -8,6 +8,7 @@
 #include "../Day6/Lanternfish.h"
 #include "../Day7/TheTreacheryOfWhales.h"
 #include "../Day8/SevenSegmentSearch.h"
+#include "../Day9/SmokeBasin.h"
 
 Task::Task(std::vector<TaskName> tasks) {
    task = new NoTask();
@@ -36,6 +37,9 @@ Task::Task(std::vector<TaskName> tasks) {
          break;
       case TaskName::SevenSegmentSearch:
          task = new SevenSegmentSearch(task);
+         break;
+      case TaskName::SmokeBasin:
+         task = new SmokeBasin(task);
          break;
       }
    }

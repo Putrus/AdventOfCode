@@ -10,7 +10,8 @@ int main() {
       TaskName::HydrothermalVenture,
       */TaskName::LanternFish,
       TaskName::TheTreacheryOfWhales,
-      TaskName::SevenSegmentSearch});
+      TaskName::SevenSegmentSearch,
+      TaskName::SmokeBasin});
    task.printResults();
    return 0;
 }
