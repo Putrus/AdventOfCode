@@ -8,12 +8,14 @@ int main() {
       TaskName::BinaryDiagnostic,
       TaskName::GiantSquid,
       TaskName::HydrothermalVenture,
-      */TaskName::LanternFish,
+      TaskName::LanternFish,
       TaskName::TheTreacheryOfWhales,
       TaskName::SevenSegmentSearch,
       TaskName::SmokeBasin,
       TaskName::SyntaxScoring,
-      TaskName::DumboOctopus});
+      TaskName::DumboOctopus,
+      TaskName::PassagePathing,*/
+      TaskName::TransparentOrigami});
    task.printResults();
    return 0;
 }

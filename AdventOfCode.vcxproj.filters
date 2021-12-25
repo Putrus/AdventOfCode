@@ -93,6 +93,9 @@
     <ClCompile Include="Day11\DumboOctopus.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Day12\PassagePathing.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Day5\HydrothermalVenture.h">
@@ -143,6 +146,9 @@
     <ClInclude Include="Day11\DumboOctopus.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Day12\PassagePathing.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Text Include="Day5\Input.txt">
@@ -181,5 +187,9 @@
     <Text Include="Day10\Input.txt" />
     <Text Include="Day11\TestInput.txt" />
     <Text Include="Day11\Input.txt" />
+    <Text Include="Day12\TestInput.txt" />
+    <Text Include="Day12\Input.txt" />
+    <Text Include="Day12\TestInputLarge.txt" />
+    <Text Include="Day12\TestInputLargest.txt" />
   </ItemGroup>
 </Project>

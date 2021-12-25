@@ -16,7 +16,20 @@ enum class TaskName {
    SevenSegmentSearch = 8,
    SmokeBasin = 9,
    SyntaxScoring = 10,
-   DumboOctopus = 11
+   DumboOctopus = 11,
+   PassagePathing = 12,
+   TransparentOrigami = 13,
+   ExtendedPolymerization = 14,
+   Chiton = 15,
+   PacketDecoder = 16,
+   TrickShot = 17,
+   Snailfish = 18,
+   BeaconScanner = 19,
+   TrenchMap = 20,
+   DiracDice = 21,
+   ReactorReboot = 22,
+   Amphipod = 23,
+   ArithmeticLogicUnit = 24
 };
 
 class Task {

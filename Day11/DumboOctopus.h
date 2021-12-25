@@ -3,7 +3,6 @@
 #include "../Decorator/DecoratorTask.h"
 
 #include <vector>
-#include <string>
 
 class DumboOctopus : public DecoratorTask {
 private:
