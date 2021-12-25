@@ -14,7 +14,9 @@ enum class TaskName {
    LanternFish = 6,
    TheTreacheryOfWhales = 7,
    SevenSegmentSearch = 8,
-   SmokeBasin = 9
+   SmokeBasin = 9,
+   SyntaxScoring = 10,
+   DumboOctopus = 11
 };
 
 class Task {

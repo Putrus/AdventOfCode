@@ -11,7 +11,9 @@ int main() {
       */TaskName::LanternFish,
       TaskName::TheTreacheryOfWhales,
       TaskName::SevenSegmentSearch,
-      TaskName::SmokeBasin});
+      TaskName::SmokeBasin,
+      TaskName::SyntaxScoring,
+      TaskName::DumboOctopus});
    task.printResults();
    return 0;
 }

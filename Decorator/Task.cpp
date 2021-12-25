@@ -9,6 +9,8 @@
 #include "../Day7/TheTreacheryOfWhales.h"
 #include "../Day8/SevenSegmentSearch.h"
 #include "../Day9/SmokeBasin.h"
+#include "../Day10/SyntaxScoring.h"
+#include "../Day11/DumboOctopus.h"
 
 Task::Task(std::vector<TaskName> tasks) {
    task = new NoTask();
@@ -40,6 +42,12 @@ Task::Task(std::vector<TaskName> tasks) {
          break;
       case TaskName::SmokeBasin:
          task = new SmokeBasin(task);
+         break;
+      case TaskName::SyntaxScoring:
+         task = new SyntaxScoring(task);
+         break;
+      case TaskName::DumboOctopus:
+         task = new DumboOctopus(task);
          break;
       }
    }
