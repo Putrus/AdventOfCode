@@ -96,6 +96,9 @@
     <ClCompile Include="Day12\PassagePathing.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Day13\TransparentOrigami.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Day5\HydrothermalVenture.h">
@@ -149,6 +152,9 @@
     <ClInclude Include="Day12\PassagePathing.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Day13\TransparentOrigami.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Text Include="Day5\Input.txt">
@@ -191,5 +197,6 @@
     <Text Include="Day12\Input.txt" />
     <Text Include="Day12\TestInputLarge.txt" />
     <Text Include="Day12\TestInputLargest.txt" />
+    <Text Include="Day13\TestInput.txt" />
   </ItemGroup>
 </Project>

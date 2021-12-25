@@ -144,6 +144,7 @@
     <ClCompile Include="Day10\SyntaxScoring.cpp" />
     <ClCompile Include="Day11\DumboOctopus.cpp" />
     <ClCompile Include="Day12\PassagePathing.cpp" />
+    <ClCompile Include="Day13\TransparentOrigami.cpp" />
     <ClCompile Include="Day1\SonarSweep.cpp" />
     <ClCompile Include="Day2\Dive.cpp" />
     <ClCompile Include="Day3\BinaryDiagnostic.cpp" />
@@ -163,6 +164,7 @@
     <ClInclude Include="Day10\SyntaxScoring.h" />
     <ClInclude Include="Day11\DumboOctopus.h" />
     <ClInclude Include="Day12\PassagePathing.h" />
+    <ClInclude Include="Day13\TransparentOrigami.h" />
     <ClInclude Include="Day1\SonarSweep.h" />
     <ClInclude Include="Day2\Dive.h" />
     <ClInclude Include="Day3\BinaryDiagnostic.h" />
@@ -187,6 +189,7 @@
     <Text Include="Day12\TestInput.txt" />
     <Text Include="Day12\TestInputLarge.txt" />
     <Text Include="Day12\TestInputLargest.txt" />
+    <Text Include="Day13\TestInput.txt" />
     <Text Include="Day1\Input.txt" />
     <Text Include="Day2\Input.txt" />
     <Text Include="Day3\Input.txt" />

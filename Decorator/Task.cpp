@@ -11,6 +11,8 @@
 #include "../Day9/SmokeBasin.h"
 #include "../Day10/SyntaxScoring.h"
 #include "../Day11/DumboOctopus.h"
+#include "../Day12/PassagePathing.h"
+#include "../Day13/TransparentOrigami.h"
 
 Task::Task(std::vector<TaskName> tasks) {
    task = new NoTask();
@@ -48,6 +50,12 @@ Task::Task(std::vector<TaskName> tasks) {
          break;
       case TaskName::DumboOctopus:
          task = new DumboOctopus(task);
+         break;
+      case TaskName::PassagePathing:
+         task = new PassagePathing(task);
+         break;
+      case TaskName::TransparentOrigami:
+         task = new TransparentOrigami(task);
          break;
       }
    }

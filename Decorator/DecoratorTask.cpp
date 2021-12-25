@@ -25,14 +25,14 @@ void DecoratorTask::printResultPart2() {
 }
 
 void DecoratorTask::printResultsArgs(const char * input, const char * taskName) {
-      loadInput(input);
-      std::cout << taskName << std::endl;
+   std::cout << taskName << std::endl;
+   loadInput(input);
+     
+   std::cout << "Part 1: ";
+   printResultPart1(); 
+   std::cout << std::endl;
 
-      std::cout << "Part 1: ";
-      printResultPart1(); 
-      std::cout << std::endl;
-
-      std::cout << "Part 2: ";
-      printResultPart2();
-      std::cout << std::endl;
+   std::cout << "Part 2: ";
+   printResultPart2();
+   std::cout << std::endl;
 }
