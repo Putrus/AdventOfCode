@@ -197,6 +197,8 @@
     <Text Include="Day13\TestInput.txt" />
     <Text Include="Day14\Input.txt" />
     <Text Include="Day14\TestInput.txt" />
+    <Text Include="Day15\Input.txt" />
+    <Text Include="Day15\TestInput.txt" />
     <Text Include="Day1\Input.txt" />
     <Text Include="Day2\Input.txt" />
     <Text Include="Day3\Input.txt" />

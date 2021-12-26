@@ -14,6 +14,7 @@
 #include "../Day12/PassagePathing.h"
 #include "../Day13/TransparentOrigami.h"
 #include "../Day14/ExtendedPolimerization.h"
+#include "../Day15/Chiton.h"
 
 Task::Task(std::vector<TaskName> tasks) {
    task = new NoTask();
@@ -60,6 +61,9 @@ Task::Task(std::vector<TaskName> tasks) {
          break;
       case TaskName::ExtendedPolymerization:
          task = new ExtendedPolimerization(task);
+         break;
+      case TaskName::Chiton:
+         task = new Chiton(task);
          break;
       }
    }

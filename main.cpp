@@ -15,8 +15,9 @@ int main() {
       TaskName::SyntaxScoring,
       TaskName::DumboOctopus,
       TaskName::PassagePathing,
-      TaskName::TransparentOrigami,*/
-      TaskName::ExtendedPolymerization});
+      TaskName::TransparentOrigami,
+      TaskName::ExtendedPolymerization,*/
+      TaskName::Chiton});
    task.printResults();
    return 0;
 }

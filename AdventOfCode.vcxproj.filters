@@ -213,6 +213,8 @@
     <Text Include="Day14\TestInput.txt" />
     <Text Include="Day14\Input.txt" />
     <Text Include="Day13\Input.txt" />
+    <Text Include="Day15\TestInput.txt" />
+    <Text Include="Day15\Input.txt" />
   </ItemGroup>
   <ItemGroup>
     <Image Include="Day12\diagram.jpg">
