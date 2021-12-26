@@ -6,7 +6,7 @@
 SonarSweep::SonarSweep(ComponentTask *task) : DecoratorTask(task){}
 
 void SonarSweep::printResults() {
-   printResultsArgs("Day1/Input.txt", "--- Day 1: SonarSweep ---");
+   printResultsArgs("Day1/Input.txt", "--- Day 1: Sonar Sweep ---");
    task->printResults();
 }
 

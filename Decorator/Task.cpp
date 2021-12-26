@@ -13,6 +13,7 @@
 #include "../Day11/DumboOctopus.h"
 #include "../Day12/PassagePathing.h"
 #include "../Day13/TransparentOrigami.h"
+#include "../Day14/ExtendedPolimerization.h"
 
 Task::Task(std::vector<TaskName> tasks) {
    task = new NoTask();
@@ -56,6 +57,9 @@ Task::Task(std::vector<TaskName> tasks) {
          break;
       case TaskName::TransparentOrigami:
          task = new TransparentOrigami(task);
+         break;
+      case TaskName::ExtendedPolymerization:
+         task = new ExtendedPolimerization(task);
          break;
       }
    }

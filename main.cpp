@@ -14,8 +14,9 @@ int main() {
       TaskName::SmokeBasin,
       TaskName::SyntaxScoring,
       TaskName::DumboOctopus,
-      TaskName::PassagePathing,*/
-      TaskName::TransparentOrigami});
+      TaskName::PassagePathing,
+      TaskName::TransparentOrigami,*/
+      TaskName::ExtendedPolymerization});
    task.printResults();
    return 0;
 }
