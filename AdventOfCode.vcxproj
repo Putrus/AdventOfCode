@@ -146,6 +146,7 @@
     <ClCompile Include="Day12\PassagePathing.cpp" />
     <ClCompile Include="Day13\TransparentOrigami.cpp" />
     <ClCompile Include="Day14\ExtendedPolymerization.cpp" />
+    <ClCompile Include="Day15\Chiton.cpp" />
     <ClCompile Include="Day1\SonarSweep.cpp" />
     <ClCompile Include="Day2\Dive.cpp" />
     <ClCompile Include="Day3\BinaryDiagnostic.cpp" />
@@ -167,6 +168,7 @@
     <ClInclude Include="Day12\PassagePathing.h" />
     <ClInclude Include="Day13\TransparentOrigami.h" />
     <ClInclude Include="Day14\ExtendedPolimerization.h" />
+    <ClInclude Include="Day15\Chiton.h" />
     <ClInclude Include="Day1\SonarSweep.h" />
     <ClInclude Include="Day2\Dive.h" />
     <ClInclude Include="Day3\BinaryDiagnostic.h" />
@@ -191,6 +193,7 @@
     <Text Include="Day12\TestInput.txt" />
     <Text Include="Day12\TestInputLarge.txt" />
     <Text Include="Day12\TestInputLargest.txt" />
+    <Text Include="Day13\Input.txt" />
     <Text Include="Day13\TestInput.txt" />
     <Text Include="Day14\Input.txt" />
     <Text Include="Day14\TestInput.txt" />
@@ -206,6 +209,9 @@
     <Text Include="Day8\TestInput.txt" />
     <Text Include="Day9\Input.txt" />
     <Text Include="Day9\TestInput.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Day12\diagram.jpg" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

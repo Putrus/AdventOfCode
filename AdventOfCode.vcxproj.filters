@@ -102,6 +102,9 @@
     <ClCompile Include="Day14\ExtendedPolymerization.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Day15\Chiton.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Day5\HydrothermalVenture.h">
@@ -161,6 +164,9 @@
     <ClInclude Include="Day14\ExtendedPolimerization.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Day15\Chiton.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Text Include="Day5\Input.txt">
@@ -206,5 +212,11 @@
     <Text Include="Day13\TestInput.txt" />
     <Text Include="Day14\TestInput.txt" />
     <Text Include="Day14\Input.txt" />
+    <Text Include="Day13\Input.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Day12\diagram.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
   </ItemGroup>
 </Project>
