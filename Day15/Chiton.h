@@ -7,6 +7,7 @@
 class Chiton : public DecoratorTask {
 private:
    std::vector<std::vector<int>> grid;
+ 
 public:
    Chiton(ComponentTask* task);
    void printResults() override;
@@ -17,4 +18,5 @@ private:
    void printResultPart2() override;
 
    void dijkstra(std::vector<std::vector<int>>& grid);
+   void myDijkstra(std::vector<std::vector<int>>& grid);
 };
