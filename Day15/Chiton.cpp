@@ -29,6 +29,30 @@ void Chiton::loadInput(const char* filename) {
 }
 
 void Chiton::printResultPart1() {
+   dijkstra(grid);
+}
+
+void Chiton::printResultPart2() {
+   //create grid 5x5
+   std::vector<std::vector<int>> grid5 = grid;
+   for (int i = grid.size(); i < grid.size() * 5; ++i) {
+      std::vector<int> row;
+      for (int j = 0; j < grid[0].size(); ++j) {
+         int value = grid5[i - 10][j] == 9 ? 1 : grid5[i - 10][j] + 1;
+         row.push_back(value);
+      }
+      grid5.push_back(row);
+   }
+   for (int i = 0; i < grid5.size(); ++i) {
+      for (int j = grid[0].size(); j < grid[0].size() * 5; ++j) {
+         int value = grid5[i][j - 10] == 9 ? 1 : grid5[i][j - 10] + 1;
+         grid5[i].push_back(value);
+      }
+   }
+   dijkstra(grid5);
+}
+
+void Chiton::dijkstra(std::vector<std::vector<int>>& grid) {
    std::vector<std::vector<std::pair<int, bool>>> dp;
    for (int i = 0; i < grid.size(); ++i) {
       std::vector<std::pair<int, bool>> dpRow(grid[i].size(), { INT_MAX, true });
@@ -53,6 +77,9 @@ void Chiton::printResultPart1() {
          break;
       }
       dp[y][x].second = false;
+      if (--Qsize % 1000 == 0) {
+         std::cout << Qsize << std::endl;
+      }
       if (x >= 1 && dp[y][x - 1].second) {
          dp[y][x - 1].first = std::min(dp[y][x - 1].first, dp[y][x].first + grid[y][x - 1]);
       }
@@ -67,8 +94,4 @@ void Chiton::printResultPart1() {
       }
    }
    std::cout << dp[dp.size() - 1][dp[0].size() - 1].first;
-}
-
-void Chiton::printResultPart2() {
-
 }

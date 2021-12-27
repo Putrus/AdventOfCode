@@ -15,4 +15,6 @@ private:
    void loadInput(const char* filename) override;
    void printResultPart1() override;
    void printResultPart2() override;
+
+   void dijkstra(std::vector<std::vector<int>>& grid);
 };
