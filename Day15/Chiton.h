@@ -18,5 +18,5 @@ private:
    void printResultPart2() override;
 
    void dijkstra(std::vector<std::vector<int>>& grid);
-   void myDijkstra(std::vector<std::vector<int>>& grid);
+   void experimentalDijkstra(std::vector<std::vector<int>>& grid);
 };
