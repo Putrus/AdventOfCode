@@ -18,5 +18,157 @@
     <ClCompile Include="main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Decorator\DecoratorTask.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Decorator\NoTask.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Decorator\Task.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Utilities\Utilities.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Day15\Chiton.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Day14\ExtendedPolymerization.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Day1\SonarSweep.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Day2\Dive.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Day3\BinaryDiagnostic.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Day4\GiantSquid.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Day5\HydrothermalVenture.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Day6\Lanternfish.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Day7\TheTreacheryOfWhales.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Day8\SevenSegmentSearch.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Day9\SmokeBasin.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Day10\SyntaxScoring.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Day11\DumboOctopus.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Day12\PassagePathing.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Day13\TransparentOrigami.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Decorator\ComponentTask.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Decorator\DecoratorTask.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Decorator\NoTask.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Decorator\Task.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Utilities\Utilities.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Day15\Chiton.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Day14\ExtendedPolimerization.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Day1\SonarSweep.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Day2\Dive.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Day3\BinaryDiagnostic.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Day4\GiantSquid.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Day5\HydrothermalVenture.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Day6\Lanternfish.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Day7\TheTreacheryOfWhales.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Day8\SevenSegmentSearch.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Day9\SmokeBasin.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Day10\SyntaxScoring.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Day11\DumboOctopus.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Day12\PassagePathing.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Day13\TransparentOrigami.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="Day15\Input.txt" />
+    <Text Include="Day15\TestInput.txt" />
+    <Text Include="Day14\Input.txt" />
+    <Text Include="Day14\TestInput.txt" />
+    <Text Include="Day1\Input.txt" />
+    <Text Include="Day2\Input.txt" />
+    <Text Include="Day3\Input.txt" />
+    <Text Include="Day4\Input.txt" />
+    <Text Include="Day5\Input.txt" />
+    <Text Include="Day5\TestInput.txt" />
+    <Text Include="Day6\Input.txt" />
+    <Text Include="Day7\Input.txt" />
+    <Text Include="Day8\Input.txt" />
+    <Text Include="Day8\TestInput.txt" />
+    <Text Include="Day9\Input.txt" />
+    <Text Include="Day9\TestInput.txt" />
+    <Text Include="Day10\Input.txt" />
+    <Text Include="Day10\TestInput.txt" />
+    <Text Include="Day11\Input.txt" />
+    <Text Include="Day11\TestInput.txt" />
+    <Text Include="Day12\Input.txt" />
+    <Text Include="Day12\TestInput.txt" />
+    <Text Include="Day12\TestInputLarge.txt" />
+    <Text Include="Day12\TestInputLargest.txt" />
+    <Text Include="Day13\Input.txt" />
+    <Text Include="Day13\TestInput.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Day12\diagram.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
   </ItemGroup>
 </Project>

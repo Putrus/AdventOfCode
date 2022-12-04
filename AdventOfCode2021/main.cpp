@@ -18,6 +18,6 @@ int main() {
       TaskName::TransparentOrigami,
       TaskName::ExtendedPolymerization,
       TaskName::Chiton });
-   //task.printResults();
+   task.printResults();
    return 0;
 }
