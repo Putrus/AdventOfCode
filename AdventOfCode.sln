@@ -5,6 +5,8 @@ VisualStudioVersion = 16.0.31129.286
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AdventOfCode2021", "AdventOfCode2021\AdventOfCode2021.vcxproj", "{10EBE0D1-59E4-4706-BC0B-ECF30B35DF7C}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AdventOfCode2022", "AdventOfCode2022\AdventOfCode2022.vcxproj", "{BB933587-5D30-4D65-A758-F8D3028EB752}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -21,6 +23,14 @@ Global
 		{10EBE0D1-59E4-4706-BC0B-ECF30B35DF7C}.Release|x64.Build.0 = Release|x64
 		{10EBE0D1-59E4-4706-BC0B-ECF30B35DF7C}.Release|x86.ActiveCfg = Release|Win32
 		{10EBE0D1-59E4-4706-BC0B-ECF30B35DF7C}.Release|x86.Build.0 = Release|Win32
+		{BB933587-5D30-4D65-A758-F8D3028EB752}.Debug|x64.ActiveCfg = Debug|x64
+		{BB933587-5D30-4D65-A758-F8D3028EB752}.Debug|x64.Build.0 = Debug|x64
+		{BB933587-5D30-4D65-A758-F8D3028EB752}.Debug|x86.ActiveCfg = Debug|Win32
+		{BB933587-5D30-4D65-A758-F8D3028EB752}.Debug|x86.Build.0 = Debug|Win32
+		{BB933587-5D30-4D65-A758-F8D3028EB752}.Release|x64.ActiveCfg = Release|x64
+		{BB933587-5D30-4D65-A758-F8D3028EB752}.Release|x64.Build.0 = Release|x64
+		{BB933587-5D30-4D65-A758-F8D3028EB752}.Release|x86.ActiveCfg = Release|Win32
+		{BB933587-5D30-4D65-A758-F8D3028EB752}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
