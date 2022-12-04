@@ -3,7 +3,7 @@
 #include "Decorator/Task.h"
 
 int main() {
-   Task task({ /*TaskName::SonarSweep, 
+   Task task({ TaskName::SonarSweep,
       TaskName::Dive,
       TaskName::BinaryDiagnostic,
       TaskName::GiantSquid,
@@ -16,8 +16,8 @@ int main() {
       TaskName::DumboOctopus,
       TaskName::PassagePathing,
       TaskName::TransparentOrigami,
-      TaskName::ExtendedPolymerization,*/
-      TaskName::Chiton});
-   task.printResults();
+      TaskName::ExtendedPolymerization,
+      TaskName::Chiton });
+   //task.printResults();
    return 0;
 }

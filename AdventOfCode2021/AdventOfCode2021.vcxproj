@@ -21,9 +21,10 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{614bb698-8682-43bf-8240-e237c41fead4}</ProjectGuid>
+    <ProjectGuid>{10ebe0d1-59e4-4706-bc0b-ecf30b35df7c}</ProjectGuid>
     <RootNamespace>AdventOfCode</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>AdventOfCode2021</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -72,15 +73,23 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(SolutionDir)bin\$(ProjectName)\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)bin\$(ProjectName)\intermediates\$(Platform)\$(Configuration)\</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(SolutionDir)bin\$(ProjectName)\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)bin\$(ProjectName)\intermediates\$(Platform)\$(Configuration)\</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(SolutionDir)bin\$(ProjectName)\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)bin\$(ProjectName)\intermediates\$(Platform)\$(Configuration)\</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(SolutionDir)bin\$(ProjectName)\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)bin\$(ProjectName)\intermediates\$(Platform)\$(Configuration)\</IntDir>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -88,10 +97,15 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <AdditionalIncludeDirectories>
+      </AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -102,12 +116,17 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <AdditionalIncludeDirectories>
+      </AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
@@ -117,10 +136,14 @@
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpp17</LanguageStandard>
+      <AdditionalIncludeDirectories>
+      </AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -132,88 +155,20 @@
       <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpp17</LanguageStandard>
+      <AdditionalIncludeDirectories>
+      </AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Day10\SyntaxScoring.cpp" />
-    <ClCompile Include="Day11\DumboOctopus.cpp" />
-    <ClCompile Include="Day12\PassagePathing.cpp" />
-    <ClCompile Include="Day13\TransparentOrigami.cpp" />
-    <ClCompile Include="Day14\ExtendedPolymerization.cpp" />
-    <ClCompile Include="Day15\Chiton.cpp" />
-    <ClCompile Include="Day1\SonarSweep.cpp" />
-    <ClCompile Include="Day2\Dive.cpp" />
-    <ClCompile Include="Day3\BinaryDiagnostic.cpp" />
-    <ClCompile Include="Day4\GiantSquid.cpp" />
-    <ClCompile Include="Day5\HydrothermalVenture.cpp" />
-    <ClCompile Include="Day6\Lanternfish.cpp" />
-    <ClCompile Include="Day7\TheTreacheryOfWhales.cpp" />
-    <ClCompile Include="Day8\SevenSegmentSearch.cpp" />
-    <ClCompile Include="Day9\SmokeBasin.cpp" />
-    <ClCompile Include="Decorator\DecoratorTask.cpp" />
-    <ClCompile Include="Decorator\NoTask.cpp" />
-    <ClCompile Include="Decorator\Task.cpp" />
     <ClCompile Include="main.cpp" />
-    <ClCompile Include="Utilities\Utilities.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="Day10\SyntaxScoring.h" />
-    <ClInclude Include="Day11\DumboOctopus.h" />
-    <ClInclude Include="Day12\PassagePathing.h" />
-    <ClInclude Include="Day13\TransparentOrigami.h" />
-    <ClInclude Include="Day14\ExtendedPolimerization.h" />
-    <ClInclude Include="Day15\Chiton.h" />
-    <ClInclude Include="Day1\SonarSweep.h" />
-    <ClInclude Include="Day2\Dive.h" />
-    <ClInclude Include="Day3\BinaryDiagnostic.h" />
-    <ClInclude Include="Day4\GiantSquid.h" />
-    <ClInclude Include="Day5\HydrothermalVenture.h" />
-    <ClInclude Include="Day6\Lanternfish.h" />
-    <ClInclude Include="Day7\TheTreacheryOfWhales.h" />
-    <ClInclude Include="Day8\SevenSegmentSearch.h" />
-    <ClInclude Include="Day9\SmokeBasin.h" />
-    <ClInclude Include="Decorator\DecoratorTask.h" />
-    <ClInclude Include="Decorator\ComponentTask.h" />
-    <ClInclude Include="Decorator\NoTask.h" />
-    <ClInclude Include="Decorator\Task.h" />
-    <ClInclude Include="Utilities\Utilities.h" />
-  </ItemGroup>
-  <ItemGroup>
-    <Text Include="Day10\Input.txt" />
-    <Text Include="Day10\TestInput.txt" />
-    <Text Include="Day11\Input.txt" />
-    <Text Include="Day11\TestInput.txt" />
-    <Text Include="Day12\Input.txt" />
-    <Text Include="Day12\TestInput.txt" />
-    <Text Include="Day12\TestInputLarge.txt" />
-    <Text Include="Day12\TestInputLargest.txt" />
-    <Text Include="Day13\Input.txt" />
-    <Text Include="Day13\TestInput.txt" />
-    <Text Include="Day14\Input.txt" />
-    <Text Include="Day14\TestInput.txt" />
-    <Text Include="Day15\Input.txt" />
-    <Text Include="Day15\TestInput.txt" />
-    <Text Include="Day1\Input.txt" />
-    <Text Include="Day2\Input.txt" />
-    <Text Include="Day3\Input.txt" />
-    <Text Include="Day4\Input.txt" />
-    <Text Include="Day5\Input.txt" />
-    <Text Include="Day5\TestInput.txt" />
-    <Text Include="Day6\Input.txt" />
-    <Text Include="Day7\Input.txt" />
-    <Text Include="Day8\Input.txt" />
-    <Text Include="Day8\TestInput.txt" />
-    <Text Include="Day9\Input.txt" />
-    <Text Include="Day9\TestInput.txt" />
-  </ItemGroup>
-  <ItemGroup>
-    <Image Include="Day12\diagram.jpg" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
