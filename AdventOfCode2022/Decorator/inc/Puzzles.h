@@ -16,8 +16,8 @@ class Puzzles
 {
 public:
    Puzzles(std::vector<PuzzleName> const& puzzles_names);
+   void calcAndPrintAnswers();
 
 private:
    std::shared_ptr<PuzzleComponent> puzzles;
-   void calcAndPrintAnswers();
 };

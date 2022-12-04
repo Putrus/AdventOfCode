@@ -2,12 +2,15 @@
 
 #include <iostream>
 
+PuzzleDecorator::PuzzleDecorator(std::shared_ptr<PuzzleComponent> puzzle) : puzzle(puzzle)
+{}
+
 void PuzzleDecorator::calcAndPrintAnswers()
 {
    puzzle->calcAndPrintAnswers();
 }
 
-void PuzzleDecorator::calcAndPrintAnswers(const char* input, const char* puzzle_name)
+void PuzzleDecorator::calcAndPrintAnswersTemplate(const char* input, const char* puzzle_name)
 {
    std::cout << "--- " << puzzle_name << " ---" << std::endl;
    loadInput(input);
