@@ -4,10 +4,10 @@
 
 #include <vector>
 
-class CalorieCounting final : public PuzzleDecorator
+class RockPaperScissors final : public PuzzleDecorator
 {
 public:
-   CalorieCounting(std::shared_ptr<PuzzleComponent> puzzle);
+   RockPaperScissors(std::shared_ptr<PuzzleComponent> puzzle);
    void calcAndPrintAnswers() override;
 
 private:
@@ -16,5 +16,5 @@ private:
    void calcAndPrintAnswerToPart2() override;
 
 private:
-   std::vector<int> sums;
+   std::vector<std::pair<char, char>> predictions;
 };

@@ -2,7 +2,7 @@
 #include "../inc/EmptyPuzzle.h"
 
 #include "../../Day1/inc/CalorieCounting.h"
-//day2
+#include "../../Day2/inc/RockPaperScissors.h"
 //day3
 //day4
 #include "../../Day5/inc/SupplyStacks.h"
@@ -16,6 +16,9 @@ Puzzles::Puzzles(std::vector<PuzzleName> const& puzzles_names)
       {
       case PuzzleName::CalorieCounting:
          puzzles = std::make_shared<CalorieCounting>(puzzles);
+         break;
+      case PuzzleName::RockPaperScissors:
+         puzzles = std::make_shared<RockPaperScissors>(puzzles);
          break;
       case PuzzleName::SupplyStacks:
          puzzles = std::make_shared<SupplyStacks>(puzzles);
