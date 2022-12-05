@@ -9,7 +9,8 @@ enum class PuzzleName {
    CalorieCounting = 1,
    RockPaperScissors = 2,
    RucksackReorganization = 3,
-   CampCleanup = 4
+   CampCleanup = 4,
+   SupplyStacks = 5
 };
 
 class Puzzles

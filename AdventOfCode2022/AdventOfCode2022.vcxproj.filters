@@ -30,6 +30,9 @@
     <ClInclude Include="Day1\inc\CalorieCounting.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Day5\inc\SupplyStacks.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Decorator\src\PuzzleDecorator.cpp">
@@ -47,9 +50,13 @@
     <ClCompile Include="Day1\src\CalorieCounting.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Day5\src\SupplyStacks.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="..\..\aoc\aoc\input.txt" />
     <Text Include="Day1\res\input.txt" />
+    <Text Include="Day5\res\input.txt" />
   </ItemGroup>
 </Project>

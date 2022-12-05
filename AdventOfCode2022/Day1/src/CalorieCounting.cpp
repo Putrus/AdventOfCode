@@ -9,22 +9,22 @@ CalorieCounting::CalorieCounting(std::shared_ptr<PuzzleComponent> puzzle) : Puzz
 
 void CalorieCounting::calcAndPrintAnswers()
 {
-   calcAndPrintAnswersTemplate("Day1/res/input.txt", "Calorie Counting");
+   calcAndPrintAnswersTemplate(1, "Calorie Counting");
    puzzle->calcAndPrintAnswers();
 }
 
-void CalorieCounting::loadInput(const char* filename)
+void CalorieCounting::loadInput(const char* input_path)
 {
    
 }
 
 void CalorieCounting::calcAndPrintAnswerToPart1()
 {
-   std::ifstream input("Day1/res/input.txt");
+   std::ifstream input_path("Day1/res/input_path.txt");
    std::string line;
    int max = 0;
    int sum = 0;
-   while (std::getline(input, line))
+   while (std::getline(input_path, line))
    {
       if (line.empty())
       {
@@ -39,7 +39,7 @@ void CalorieCounting::calcAndPrintAnswerToPart1()
          sum += stoi(line);
       }
    }
-   input.close();
+   input_path.close();
    std::cout << max << std::endl;
 }
 

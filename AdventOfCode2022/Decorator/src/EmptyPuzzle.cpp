@@ -5,7 +5,7 @@ void EmptyPuzzle::calcAndPrintAnswers()
    return;
 }
 
-void EmptyPuzzle::loadInput(const char* filename)
+void EmptyPuzzle::loadInput(const char* input_path)
 {
    return;
 }
