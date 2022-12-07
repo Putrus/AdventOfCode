@@ -52,6 +52,7 @@ void SupplyStacks::loadInput(const char* input_path)
          moves.push_back(move);
       }
    }
+   input.close();
 }
 
 void SupplyStacks::calcAndPrintAnswerToPart1()

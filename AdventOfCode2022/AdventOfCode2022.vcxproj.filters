@@ -36,6 +36,12 @@
     <ClInclude Include="Day2\inc\RockPaperScissors.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Day6\inc\TuningTrouble.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Day7\inc\NoSpaceLeftOnDevice.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Decorator\src\PuzzleDecorator.cpp">
@@ -59,10 +65,18 @@
     <ClCompile Include="Day2\src\RockPaperScissors.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Day6\src\TuningTrouble.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Day7\src\NoSpaceLeftOnDevice.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="Day1\res\input.txt" />
     <Text Include="Day5\res\input.txt" />
     <Text Include="Day2\res\input.txt" />
+    <Text Include="Day6\res\input.txt" />
+    <Text Include="Day7\res\input.txt" />
   </ItemGroup>
 </Project>

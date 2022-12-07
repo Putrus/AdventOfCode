@@ -6,6 +6,8 @@
 //day3
 //day4
 #include "../../Day5/inc/SupplyStacks.h"
+#include "../../Day6/inc/TuningTrouble.h"
+#include "../../Day7/inc/NoSpaceLeftOnDevice.h"
 
 Puzzles::Puzzles(std::vector<PuzzleName> const& puzzles_names)
 {
@@ -22,6 +24,12 @@ Puzzles::Puzzles(std::vector<PuzzleName> const& puzzles_names)
          break;
       case PuzzleName::SupplyStacks:
          puzzles = std::make_shared<SupplyStacks>(puzzles);
+         break;
+      case PuzzleName::TuningTrouble:
+         puzzles = std::make_shared<TuningTrouble>(puzzles);
+         break;
+      case PuzzleName::NoSpaceLeftOnDevice:
+         puzzles = std::make_shared<NoSpaceLeftOnDevice>(puzzles);
          break;
       }
    }

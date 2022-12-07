@@ -2,9 +2,11 @@
 
 int main()
 {  
-   Puzzles puzzles({ PuzzleName::CalorieCounting,
+   Puzzles puzzles({ /*PuzzleName::CalorieCounting,
       PuzzleName::RockPaperScissors,
-      PuzzleName::SupplyStacks});
+      PuzzleName::SupplyStacks,
+      PuzzleName::TuningTrouble,*/
+      PuzzleName::NoSpaceLeftOnDevice});
    puzzles.calcAndPrintAnswers();
    return 0;
 }
