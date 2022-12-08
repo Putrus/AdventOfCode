@@ -42,6 +42,9 @@
     <ClInclude Include="Day7\inc\NoSpaceLeftOnDevice.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Day8\inc\TreetopTreeHouse.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Decorator\src\PuzzleDecorator.cpp">
@@ -71,6 +74,9 @@
     <ClCompile Include="Day7\src\NoSpaceLeftOnDevice.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Day8\src\TreetopTreeHouse.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="Day1\res\input.txt" />
@@ -78,5 +84,6 @@
     <Text Include="Day2\res\input.txt" />
     <Text Include="Day6\res\input.txt" />
     <Text Include="Day7\res\input.txt" />
+    <Text Include="Day8\res\input.txt" />
   </ItemGroup>
 </Project>

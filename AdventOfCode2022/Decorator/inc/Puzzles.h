@@ -12,7 +12,8 @@ enum class PuzzleName {
    CampCleanup = 4,
    SupplyStacks = 5,
    TuningTrouble = 6,
-   NoSpaceLeftOnDevice = 7
+   NoSpaceLeftOnDevice = 7,
+   TreetopTreeHouse = 8
 };
 
 class Puzzles

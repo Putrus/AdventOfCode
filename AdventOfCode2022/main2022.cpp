@@ -6,7 +6,8 @@ int main()
       PuzzleName::RockPaperScissors,
       PuzzleName::SupplyStacks,
       PuzzleName::TuningTrouble,*/
-      PuzzleName::NoSpaceLeftOnDevice});
+      PuzzleName::NoSpaceLeftOnDevice,
+      PuzzleName::TreetopTreeHouse });
    puzzles.calcAndPrintAnswers();
    return 0;
 }

@@ -156,6 +156,7 @@
     <ClInclude Include="Day5\inc\SupplyStacks.h" />
     <ClInclude Include="Day6\inc\TuningTrouble.h" />
     <ClInclude Include="Day7\inc\NoSpaceLeftOnDevice.h" />
+    <ClInclude Include="Day8\inc\TreetopTreeHouse.h" />
     <ClInclude Include="Decorator\inc\EmptyPuzzle.h" />
     <ClInclude Include="Decorator\inc\PuzzleComponent.h" />
     <ClInclude Include="Decorator\inc\PuzzleDecorator.h" />
@@ -167,6 +168,7 @@
     <ClCompile Include="Day5\src\SupplyStacks.cpp" />
     <ClCompile Include="Day6\src\TuningTrouble.cpp" />
     <ClCompile Include="Day7\src\NoSpaceLeftOnDevice.cpp" />
+    <ClCompile Include="Day8\src\TreetopTreeHouse.cpp" />
     <ClCompile Include="Decorator\src\Puzzles.cpp" />
     <ClCompile Include="Decorator\src\EmptyPuzzle.cpp" />
     <ClCompile Include="main2022.cpp" />
@@ -178,6 +180,7 @@
     <Text Include="Day5\res\input.txt" />
     <Text Include="Day6\res\input.txt" />
     <Text Include="Day7\res\input.txt" />
+    <Text Include="Day8\res\input.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
