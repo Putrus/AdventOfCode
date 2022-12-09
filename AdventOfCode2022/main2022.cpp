@@ -7,7 +7,8 @@ int main()
       PuzzleName::SupplyStacks,
       PuzzleName::TuningTrouble,*/
       PuzzleName::NoSpaceLeftOnDevice,
-      PuzzleName::TreetopTreeHouse });
+      PuzzleName::TreetopTreeHouse,
+      PuzzleName::RopeBridge});
    puzzles.calcAndPrintAnswers();
    return 0;
 }

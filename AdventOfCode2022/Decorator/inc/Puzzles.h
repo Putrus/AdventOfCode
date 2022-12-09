@@ -13,7 +13,8 @@ enum class PuzzleName {
    SupplyStacks = 5,
    TuningTrouble = 6,
    NoSpaceLeftOnDevice = 7,
-   TreetopTreeHouse = 8
+   TreetopTreeHouse = 8,
+   RopeBridge = 9
 };
 
 class Puzzles

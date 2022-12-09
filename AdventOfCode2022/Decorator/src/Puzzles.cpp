@@ -9,6 +9,7 @@
 #include "../../Day6/inc/TuningTrouble.h"
 #include "../../Day7/inc/NoSpaceLeftOnDevice.h"
 #include "../../Day8/inc/TreetopTreeHouse.h"
+#include "../../Day9/inc/RopeBridge.h"
 
 Puzzles::Puzzles(std::vector<PuzzleName> const& puzzles_names)
 {
@@ -34,6 +35,9 @@ Puzzles::Puzzles(std::vector<PuzzleName> const& puzzles_names)
          break;
       case PuzzleName::TreetopTreeHouse:
          puzzles = std::make_shared<TreetopTreeHouse>(puzzles);
+         break;
+      case PuzzleName::RopeBridge:
+         puzzles = std::make_shared<RopeBridge>(puzzles);
          break;
       }
    }
