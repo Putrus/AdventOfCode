@@ -127,14 +127,14 @@ void MonkeyInTheMiddle::loadInput(const char* input_path)
 
 void MonkeyInTheMiddle::calcAndPrintAnswerToPart1()
 {
-   std::cout << calcResult(monkeys, 20);
+   std::cout << calcResult(monkeys, 20) << std::endl;
 }
 
 void MonkeyInTheMiddle::calcAndPrintAnswerToPart2()
 {
    std::cout << calcResult(monkeys, 10000, [this](long long item, bool mul) {
       return mul ? item : item % lcd;
-      });
+      }) << std::endl;
 }
 
 long long MonkeyInTheMiddle::calcResult(std::vector<Monkey> monkeys_copy, int rounds, std::function<long long(long long item, bool mul)> lambda)
