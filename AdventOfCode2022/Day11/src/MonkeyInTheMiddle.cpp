@@ -3,6 +3,7 @@
 #include <fstream>
 #include <iostream>
 #include <string>
+#include <algorithm>
 
 MonkeyInTheMiddle::MonkeyInTheMiddle(std::shared_ptr<PuzzleComponent> puzzle) : PuzzleDecorator(puzzle)
 {}
@@ -112,9 +113,34 @@ void MonkeyInTheMiddle::calcAndPrintAnswerToPart1()
    {
       for (Monkey& monkey : monkeys)
       {
-
+         auto it = monkey.items.begin();
+         while (it != monkey.items.end())
+         {
+            int new_item = monkey.operation(*it) / 3;
+            it = monkey.items.erase(it);
+            if (new_item % monkey.divider == 0)
+            {
+               monkeys[monkey.true_monkey_id].items.push_back(new_item);
+            }
+            else
+            {
+               monkeys[monkey.false_monkey_id].items.push_back(new_item);
+            }
+            ++monkey.inspected_items;
+         }
       }
    }
+   
+   std::vector<int> bests(2, 0);
+   for (auto const& monkey : monkeys)
+   {
+      if (monkey.inspected_items > bests[0])
+      {
+         bests[0] = monkey.inspected_items;
+         std::sort(bests.begin(), bests.end());
+      }
+   }
+   std::cout << bests[0] * bests[1] << std::endl;
 }
 
 void MonkeyInTheMiddle::calcAndPrintAnswerToPart2()
