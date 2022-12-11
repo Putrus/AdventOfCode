@@ -10,6 +10,8 @@
 #include "../../Day7/inc/NoSpaceLeftOnDevice.h"
 #include "../../Day8/inc/TreetopTreeHouse.h"
 #include "../../Day9/inc/RopeBridge.h"
+#include "../../Day10/inc/CathodeRayTube.h"
+#include "../../Day11/inc/MonkeyInTheMiddle.h"
 
 Puzzles::Puzzles(std::vector<PuzzleName> const& puzzles_names)
 {
@@ -38,6 +40,12 @@ Puzzles::Puzzles(std::vector<PuzzleName> const& puzzles_names)
          break;
       case PuzzleName::RopeBridge:
          puzzles = std::make_shared<RopeBridge>(puzzles);
+         break;
+      case PuzzleName::CathodeRayTube:
+         puzzles = std::make_shared<CathodeRayTube>(puzzles);
+         break;
+      case PuzzleName::MonkeyInTheMiddle:
+         puzzles = std::make_shared<MonkeyInTheMiddle>(puzzles);
          break;
       }
    }

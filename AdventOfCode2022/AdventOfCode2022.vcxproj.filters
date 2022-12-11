@@ -48,6 +48,12 @@
     <ClInclude Include="Day9\inc\RopeBridge.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Day10\inc\CathodeRayTube.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Day11\inc\MonkeyInTheMiddle.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Decorator\src\PuzzleDecorator.cpp">
@@ -83,6 +89,12 @@
     <ClCompile Include="Day9\src\RopeBridge.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Day10\src\CathodeRayTube.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Day11\src\MonkeyInTheMiddle.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="Day1\res\input.txt" />
@@ -92,5 +104,7 @@
     <Text Include="Day7\res\input.txt" />
     <Text Include="Day8\res\input.txt" />
     <Text Include="Day9\res\input.txt" />
+    <Text Include="Day10\res\input.txt" />
+    <Text Include="Day11\res\input.txt" />
   </ItemGroup>
 </Project>

@@ -5,10 +5,12 @@ int main()
    Puzzles puzzles({ /*PuzzleName::CalorieCounting,
       PuzzleName::RockPaperScissors,
       PuzzleName::SupplyStacks,
-      PuzzleName::TuningTrouble,*/
+      PuzzleName::TuningTrouble,
       PuzzleName::NoSpaceLeftOnDevice,
       PuzzleName::TreetopTreeHouse,
-      PuzzleName::RopeBridge});
+      PuzzleName::RopeBridge,
+      PuzzleName::CathodeRayTube,*/
+      PuzzleName::MonkeyInTheMiddle});
    puzzles.calcAndPrintAnswers();
    return 0;
 }

@@ -14,7 +14,9 @@ enum class PuzzleName {
    TuningTrouble = 6,
    NoSpaceLeftOnDevice = 7,
    TreetopTreeHouse = 8,
-   RopeBridge = 9
+   RopeBridge = 9,
+   CathodeRayTube = 10,
+   MonkeyInTheMiddle = 11
 };
 
 class Puzzles
