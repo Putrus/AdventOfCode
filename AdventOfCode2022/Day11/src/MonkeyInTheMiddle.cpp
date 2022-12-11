@@ -48,49 +48,57 @@ void MonkeyInTheMiddle::loadInput(const char* input_path)
       input >> first_argument >> operation >> second_argument;
       if (operation == '+')
       {
+         monkey.mul = false;
          if (first_argument == "old" && second_argument == "old")
          {
-            monkey.operation = [](int item) -> int
+            monkey.operation = [](long long item) -> long long
             {
                return item + item;
             };
          }
          else if (first_argument == "old")
          {
-            monkey.operation = [second_argument](int item) -> int
+            long long argument = stoi(second_argument);
+            monkey.operation = [argument](long long item) -> long long
             {
-               return item + stoi(second_argument);
+               return item + argument;
             };
          }
          else
          {
-            monkey.operation = [first_argument, second_argument](int item) -> int
+            long long argument1 = stoi(first_argument);
+            long long argument2 = stoi(second_argument);
+            monkey.operation = [argument1, argument2](long long item) -> long long
             {
-               return stoi(first_argument) + stoi(second_argument);
+               return argument1 + argument2;
             };
          }
       }
       else
       {
+         monkey.mul = true;
          if (first_argument == "old" && second_argument == "old")
          {
-            monkey.operation = [](int item) -> int
+            monkey.operation = [](long long item) -> long long
             {
                return item * item;
             };
          }
          else if (first_argument == "old")
          {
-            monkey.operation = [second_argument](int item) -> int
+            long long argument = stoi(second_argument);
+            monkey.operation = [argument](long long item) -> long long
             {
-               return item * stoi(second_argument);
+               return item * argument;
             };
          }
          else
          {
-            monkey.operation = [first_argument, second_argument](int item) -> int
+            long long argument1 = stoi(first_argument);
+            long long argument2 = stoi(second_argument);
+            monkey.operation = [argument1, argument2](long long item) -> long long
             {
-               return stoi(first_argument) * stoi(second_argument);
+               return argument1 * argument2;
             };
          }
       }
@@ -98,6 +106,16 @@ void MonkeyInTheMiddle::loadInput(const char* input_path)
       //test
       std::string text1, text2, text3, text4, text5;
       input >> text1 >> text2 >> text3 >> monkey.divider;
+      long long denominator = std::max(lcd, monkey.divider);
+      while (true)
+      {
+         if (denominator % lcd == 0 && denominator % monkey.divider == 0)
+         {
+            lcd = denominator;
+            break;
+         }
+         ++denominator;
+      }
       //if true
       input >> text1 >> text2 >> text3 >> text4 >> text5 >> monkey.true_monkey_id;
       //if false
@@ -109,30 +127,42 @@ void MonkeyInTheMiddle::loadInput(const char* input_path)
 
 void MonkeyInTheMiddle::calcAndPrintAnswerToPart1()
 {
-   for (int round = 0; round < 20; ++round)
+   std::cout << calcResult(monkeys, 20);
+}
+
+void MonkeyInTheMiddle::calcAndPrintAnswerToPart2()
+{
+   std::cout << calcResult(monkeys, 10000, [this](long long item, bool mul) {
+      return mul ? item : item % lcd;
+      });
+}
+
+long long MonkeyInTheMiddle::calcResult(std::vector<Monkey> monkeys_copy, int rounds, std::function<long long(long long item, bool mul)> lambda)
+{
+   for (int round = 0; round < rounds; ++round)
    {
-      for (Monkey& monkey : monkeys)
+      for (Monkey& monkey : monkeys_copy)
       {
          auto it = monkey.items.begin();
          while (it != monkey.items.end())
          {
-            int new_item = monkey.operation(*it) / 3;
+            long long new_item = lambda(monkey.operation(*it), monkey.mul);
             it = monkey.items.erase(it);
             if (new_item % monkey.divider == 0)
             {
-               monkeys[monkey.true_monkey_id].items.push_back(new_item);
+               monkeys_copy[monkey.true_monkey_id].items.push_back(new_item);
             }
             else
             {
-               monkeys[monkey.false_monkey_id].items.push_back(new_item);
+               monkeys_copy[monkey.false_monkey_id].items.push_back(new_item);
             }
             ++monkey.inspected_items;
          }
       }
    }
-   
-   std::vector<int> bests(2, 0);
-   for (auto const& monkey : monkeys)
+
+   std::vector<long long> bests(2, 0);
+   for (auto const& monkey : monkeys_copy)
    {
       if (monkey.inspected_items > bests[0])
       {
@@ -140,10 +170,5 @@ void MonkeyInTheMiddle::calcAndPrintAnswerToPart1()
          std::sort(bests.begin(), bests.end());
       }
    }
-   std::cout << bests[0] * bests[1] << std::endl;
-}
-
-void MonkeyInTheMiddle::calcAndPrintAnswerToPart2()
-{
-
+   return bests[0] * bests[1];
 }
