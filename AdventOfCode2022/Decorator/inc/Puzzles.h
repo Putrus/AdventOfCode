@@ -16,7 +16,7 @@ enum class PuzzleName {
    TreetopTreeHouse = 8,
    RopeBridge = 9,
    CathodeRayTube = 10,
-   MonkeyInTheMiddle = 11
+   MonkeyInTheMiddle = 11,
 };
 
 class Puzzles
