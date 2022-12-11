@@ -155,6 +155,7 @@
     <ClInclude Include="Day11\inc\MonkeyInTheMiddle.h" />
     <ClInclude Include="Day1\inc\CalorieCounting.h" />
     <ClInclude Include="Day2\inc\RockPaperScissors.h" />
+    <ClInclude Include="Day3\inc\RucksackReorganization.h" />
     <ClInclude Include="Day5\inc\SupplyStacks.h" />
     <ClInclude Include="Day6\inc\TuningTrouble.h" />
     <ClInclude Include="Day7\inc\NoSpaceLeftOnDevice.h" />
@@ -170,6 +171,7 @@
     <ClCompile Include="Day11\src\MonkeyInTheMiddle.cpp" />
     <ClCompile Include="Day1\src\CalorieCounting.cpp" />
     <ClCompile Include="Day2\src\RockPaperScissors.cpp" />
+    <ClCompile Include="Day3\src\RucksackReorganization.cpp" />
     <ClCompile Include="Day5\src\SupplyStacks.cpp" />
     <ClCompile Include="Day6\src\TuningTrouble.cpp" />
     <ClCompile Include="Day7\src\NoSpaceLeftOnDevice.cpp" />
@@ -185,6 +187,7 @@
     <Text Include="Day11\res\input.txt" />
     <Text Include="Day1\res\input.txt" />
     <Text Include="Day2\res\input.txt" />
+    <Text Include="Day3\res\input.txt" />
     <Text Include="Day5\res\input.txt" />
     <Text Include="Day6\res\input.txt" />
     <Text Include="Day7\res\input.txt" />

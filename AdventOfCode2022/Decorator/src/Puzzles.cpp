@@ -3,7 +3,7 @@
 
 #include "../../Day1/inc/CalorieCounting.h"
 #include "../../Day2/inc/RockPaperScissors.h"
-//day3
+#include "../../Day3/inc/RucksackReorganization.h"
 //day4
 #include "../../Day5/inc/SupplyStacks.h"
 #include "../../Day6/inc/TuningTrouble.h"
@@ -25,6 +25,9 @@ Puzzles::Puzzles(std::vector<PuzzleName> const& puzzles_names)
          break;
       case PuzzleName::RockPaperScissors:
          puzzles = std::make_shared<RockPaperScissors>(puzzles);
+         break;
+      case PuzzleName::RucksackReorganization:
+         puzzles = std::make_shared<RucksackReorganization>(puzzles);
          break;
       case PuzzleName::SupplyStacks:
          puzzles = std::make_shared<SupplyStacks>(puzzles);

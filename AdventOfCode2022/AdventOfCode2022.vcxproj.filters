@@ -54,6 +54,9 @@
     <ClInclude Include="Day11\inc\MonkeyInTheMiddle.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Day3\inc\RucksackReorganization.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Decorator\src\PuzzleDecorator.cpp">
@@ -95,6 +98,9 @@
     <ClCompile Include="Day11\src\MonkeyInTheMiddle.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Day3\src\RucksackReorganization.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="Day1\res\input.txt" />
@@ -106,5 +112,6 @@
     <Text Include="Day9\res\input.txt" />
     <Text Include="Day10\res\input.txt" />
     <Text Include="Day11\res\input.txt" />
+    <Text Include="Day3\res\input.txt" />
   </ItemGroup>
 </Project>
