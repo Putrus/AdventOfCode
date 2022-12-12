@@ -60,6 +60,9 @@
     <ClInclude Include="Day4\inc\CampCleanup.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Day12\inc\HillClimbingAlgorithm.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Decorator\src\PuzzleDecorator.cpp">
@@ -107,6 +110,9 @@
     <ClCompile Include="Day4\src\CampCleanup.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Day12\src\HillClimbingAlgorithm.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="Day1\res\input.txt" />
@@ -120,5 +126,6 @@
     <Text Include="Day11\res\input.txt" />
     <Text Include="Day3\res\input.txt" />
     <Text Include="Day4\res\input.txt" />
+    <Text Include="Day12\res\input.txt" />
   </ItemGroup>
 </Project>

@@ -2,7 +2,7 @@
 
 int main()
 {  
-   Puzzles puzzles({ 
+   Puzzles puzzles({/*
       PuzzleName::CalorieCounting,
       PuzzleName::RockPaperScissors,
       PuzzleName::RucksackReorganization,
@@ -13,7 +13,8 @@ int main()
       PuzzleName::TreetopTreeHouse,
       PuzzleName::RopeBridge,
       PuzzleName::CathodeRayTube,
-      PuzzleName::MonkeyInTheMiddle
+      PuzzleName::MonkeyInTheMiddle,*/
+      PuzzleName::HillClimbingAlgorithm
       });
    puzzles.calcAndPrintAnswers();
    return 0;

@@ -12,6 +12,7 @@
 #include "../../Day9/inc/RopeBridge.h"
 #include "../../Day10/inc/CathodeRayTube.h"
 #include "../../Day11/inc/MonkeyInTheMiddle.h"
+#include "../../Day12/inc/HillClimbingAlgorithm.h"
 
 Puzzles::Puzzles(std::vector<PuzzleName> const& puzzles_names)
 {
@@ -52,6 +53,9 @@ Puzzles::Puzzles(std::vector<PuzzleName> const& puzzles_names)
          break;
       case PuzzleName::MonkeyInTheMiddle:
          puzzles = std::make_shared<MonkeyInTheMiddle>(puzzles);
+         break;
+      case PuzzleName::HillClimbingAlgorithm:
+         puzzles = std::make_shared<HillClimbingAlgorithm>(puzzles);
          break;
       }
    }
