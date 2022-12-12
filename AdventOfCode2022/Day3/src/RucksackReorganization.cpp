@@ -77,9 +77,9 @@ void RucksackReorganization::calcAndPrintAnswerToPart2()
 
 char RucksackReorganization::commonType(std::string const& line)
 {
-   for (int i = 0; i < line.length() / 2; ++i)
+   for (size_t i = 0; i < line.length() / 2; ++i)
    {
-      for (int j = line.length() / 2; j < line.length(); ++j)
+      for (size_t j = line.length() / 2; j < line.length(); ++j)
       {
          if (line[i] == line[j])
          {
@@ -87,6 +87,7 @@ char RucksackReorganization::commonType(std::string const& line)
          }
       }
    }
+   return 0;
 }
 
 char RucksackReorganization::commonGroup(std::string const& line1, std::string const& line2, std::string const& line3)
@@ -107,4 +108,5 @@ char RucksackReorganization::commonGroup(std::string const& line1, std::string c
          }
       }
    }
+   return 0;
 }
