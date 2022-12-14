@@ -13,8 +13,10 @@ int main()
       PuzzleName::TreetopTreeHouse,
       PuzzleName::RopeBridge,
       PuzzleName::CathodeRayTube,
-      PuzzleName::MonkeyInTheMiddle,*/
-      PuzzleName::HillClimbingAlgorithm
+      PuzzleName::MonkeyInTheMiddle,
+      PuzzleName::HillClimbingAlgorithm*/
+      PuzzleName::DistressSignal,
+      PuzzleName::RegolithReservoir
       });
    puzzles.calcAndPrintAnswers();
    return 0;

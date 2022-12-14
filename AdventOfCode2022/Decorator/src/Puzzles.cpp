@@ -13,6 +13,8 @@
 #include "../../Day10/inc/CathodeRayTube.h"
 #include "../../Day11/inc/MonkeyInTheMiddle.h"
 #include "../../Day12/inc/HillClimbingAlgorithm.h"
+#include "../../Day13/inc/DistressSignal.h"
+#include "../../Day14/inc/RegolithReservoir.h"
 
 Puzzles::Puzzles(std::vector<PuzzleName> const& puzzles_names)
 {
@@ -56,6 +58,12 @@ Puzzles::Puzzles(std::vector<PuzzleName> const& puzzles_names)
          break;
       case PuzzleName::HillClimbingAlgorithm:
          puzzles = std::make_shared<HillClimbingAlgorithm>(puzzles);
+         break;
+      case PuzzleName::DistressSignal:
+         puzzles = std::make_shared<DistressSignal>(puzzles);
+         break;
+      case PuzzleName::RegolithReservoir:
+         puzzles = std::make_shared<RegolithReservoir>(puzzles);
          break;
       }
    }

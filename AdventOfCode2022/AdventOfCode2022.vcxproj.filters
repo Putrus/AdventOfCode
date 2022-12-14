@@ -63,6 +63,12 @@
     <ClInclude Include="Day12\inc\HillClimbingAlgorithm.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Day13\inc\DistressSignal.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Day14\inc\RegolithReservoir.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Decorator\src\PuzzleDecorator.cpp">
@@ -113,6 +119,12 @@
     <ClCompile Include="Day12\src\HillClimbingAlgorithm.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Day13\src\DistressSignal.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Day14\src\RegolithReservoir.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="Day1\res\input.txt" />
@@ -127,5 +139,7 @@
     <Text Include="Day3\res\input.txt" />
     <Text Include="Day4\res\input.txt" />
     <Text Include="Day12\res\input.txt" />
+    <Text Include="Day13\res\input.txt" />
+    <Text Include="Day14\res\input.txt" />
   </ItemGroup>
 </Project>
