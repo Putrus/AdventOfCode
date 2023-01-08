@@ -73,7 +73,8 @@ Packet DistressSignal::parse(std::string& s) const
    if ((s[0] == '[' && s[1] == ']') || s.empty())
    {
       s = s.substr(2);
-      return Packet({});
+      std::vector<Packet> empty_packet;
+      return empty_packet;
    }
 
    if (s[0] == '[')
