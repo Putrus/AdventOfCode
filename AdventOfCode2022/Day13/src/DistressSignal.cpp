@@ -3,11 +3,6 @@
 #include <fstream>
 #include <iostream>
 
-Packet::Packet(std::string const& line)
-{
-   
-}
-
 Packet::Packet(int val) : variant(val)
 {}
 
@@ -31,10 +26,26 @@ void DistressSignal::calcAndPrintAnswers()
 void DistressSignal::loadInput(const char* input_path)
 {
    std::ifstream input(input_path);
-   std::string line;
+   std::string first, second, line;
    while (std::getline(input, line))
    {
-      //to do
+      if (line.empty())
+      {
+         pairs.push_back({ first, second });
+         first.clear();
+         second.clear();
+         continue;
+      }
+      if (first.empty())
+      {
+         first = line;
+         continue;
+      }
+      if (second.empty())
+      {
+         second = line;
+         continue;
+      }
    }
    input.close();
 }
