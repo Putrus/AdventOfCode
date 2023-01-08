@@ -8,6 +8,7 @@
 
 struct Packet : std::variant<int, std::vector<Packet>>
 {
+   Packet(std::string const& line);
    Packet(int val);
    Packet(std::vector<Packet> const& vec);
 
@@ -37,7 +38,6 @@ struct CompareVisitor
       std::vector<Packet> p = { rhs };
       return (*this)(lhs, p);
    }
-
 };
 
 class DistressSignal final : public PuzzleDecorator
@@ -53,5 +53,5 @@ private:
    Packet parse(std::string& s) const;
 
 private:
-   std::vector<std::pair<std::string, std::string>> pairs;
+   std::vector<std::pair<Packet, Packet>> pairs;
 };

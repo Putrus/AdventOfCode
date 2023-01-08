@@ -159,7 +159,7 @@ void RopeBridge::printGrid(Position const& head, std::vector<Position> const& ta
       grid.push_back(row);
    }
    
-   for (size_t i = 0; i < tail.size(); ++i)
+   for (char i = 0; i < static_cast<char>(tail.size()); ++i)
    {
       grid[grid.size() / 2 + tail[i].y][grid[0].size() / 2 + tail[i].x] = i + '1';
    }
