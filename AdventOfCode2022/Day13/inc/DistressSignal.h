@@ -28,12 +28,14 @@ struct CompareVisitor
 
    bool operator()(int lhs, std::vector<Packet> const& rhs)
    {
-      return (*this)({ lhs }, rhs);
+      std::vector<Packet> p = { lhs };
+      return (*this)(p, rhs);
    }
 
    bool operator()(std::vector<Packet> const& lhs, int rhs)
    {
-      return (*this)(lhs, { rhs });
+      std::vector<Packet> p = { rhs };
+      return (*this)(lhs, p);
    }
 
 };
