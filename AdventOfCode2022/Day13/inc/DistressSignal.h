@@ -8,7 +8,6 @@
 
 struct Packet : std::variant<int, std::vector<Packet>>
 {
-   Packet(std::string const& line);
    Packet(int val);
    Packet(std::vector<Packet> const& vec);
 
@@ -29,12 +28,14 @@ struct CompareVisitor
 
    bool operator()(int lhs, std::vector<Packet> const& rhs)
    {
-      return (*this)({ lhs }, rhs);
+      std::vector<Packet> p = { lhs };
+      return (*this)(p, rhs);
    }
 
    bool operator()(std::vector<Packet> const& lhs, int rhs)
    {
-      return (*this)(lhs, { rhs });
+      std::vector<Packet> p = { rhs };
+      return (*this)(lhs, p);
    }
 };
 
@@ -51,5 +52,5 @@ private:
    Packet parse(std::string& s) const;
 
 private:
-   std::vector<std::pair<Packet, Packet>> pairs;
+   std::vector<std::pair<std::string, std::string>> pairs;
 };
