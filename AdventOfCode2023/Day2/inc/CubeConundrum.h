@@ -2,7 +2,6 @@
 
 #include "../../Common/Decorator/inc/PuzzleDecorator.h"
 
-#include <set>
 #include <vector>
 
 namespace aoc2023
@@ -18,7 +17,6 @@ namespace aoc2023
         virtual std::string getPart1() override;
         virtual std::string getPart2() override;
 
-    private:
         struct Cubes
         {
             int red = 0;

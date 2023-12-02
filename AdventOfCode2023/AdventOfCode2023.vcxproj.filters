@@ -54,8 +54,8 @@
     <ClInclude Include="Day1\inc\Trebuchet.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClCompile Include="Day2\inc\CubeConundrum.h">
-      <Filter>Source Files</Filter>
-    </ClCompile>
+    <ClInclude Include="Day2\inc\CubeConundrum.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

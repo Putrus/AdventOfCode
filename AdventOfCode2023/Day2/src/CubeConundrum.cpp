@@ -42,12 +42,11 @@ namespace aoc2023
                 }
 
                 char last = color[color.length() - 1];
-                if (last != ',' && last != ';')
+                if (last == ',' || last == ';')
                 {
-                    break;
+                    color = color.substr(0, color.length() - 1);
                 }
 
-                color = color.substr(0, color.length() - 1);
                 if (color == "red")
                 {
                     set.red += amount;
@@ -65,7 +64,7 @@ namespace aoc2023
                     throw std::runtime_error("Wrong color!");
                 }
 
-                if (last == ';')
+                if (last != ',')
                 {
                     cubes.push_back(set);
                     set = { 0, 0, 0 };
@@ -78,11 +77,51 @@ namespace aoc2023
 
     std::string CubeConundrum::getPart1()
     {
-        return std::string();
+        int result = 0;
+        for (size_t i = 0 ; i < games.size(); ++i)
+        {
+            bool valid = true;
+            for (const auto& cubes : games[i])
+            {
+                if (cubes.red > 12 || cubes.green > 13 || cubes.blue > 14)
+                {
+                    valid = false;
+                    break;
+                } 
+            }
+            if (valid)
+            {
+                result += i + 1;
+            }
+        }
+        return std::to_string(result);
     }
 
     std::string CubeConundrum::getPart2()
     {
-        return std::string();
+        int result = 0;
+        for (size_t i = 0; i < games.size(); ++i)
+        {
+            Cubes minimum;
+            for (const auto& cubes : games[i])
+            {
+                if (cubes.red > minimum.red)
+                {
+                    minimum.red = cubes.red;
+                }
+
+                if (cubes.green > minimum.green)
+                {
+                    minimum.green = cubes.green;
+                }
+
+                if (cubes.blue > minimum.blue)
+                {
+                    minimum.blue = cubes.blue;
+                }
+            }
+            result += minimum.red * minimum.green * minimum.blue;
+        }
+        return std::to_string(result);
     }
 }

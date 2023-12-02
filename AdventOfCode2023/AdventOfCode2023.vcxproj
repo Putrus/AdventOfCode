@@ -162,7 +162,7 @@
     <ClInclude Include="Common\Decorator\inc\PuzzleEmpty.h" />
     <ClInclude Include="Common\Decorator\inc\Puzzles.h" />
     <ClInclude Include="Day1\inc\Trebuchet.h" />
-    <ClCompile Include="Day2\inc\CubeConundrum.h" />
+    <ClInclude Include="Day2\inc\CubeConundrum.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
