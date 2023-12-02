@@ -30,9 +30,13 @@
     <ClCompile Include="Day1\src\Trebuchet.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Day2\src\CubeConundrum.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="Day1\res\day1input.txt" />
+    <Text Include="Day2\res\day2input.txt" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Common\Decorator\inc\PuzzleComponent.h">
@@ -50,5 +54,8 @@
     <ClInclude Include="Day1\inc\Trebuchet.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClCompile Include="Day2\inc\CubeConundrum.h">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
