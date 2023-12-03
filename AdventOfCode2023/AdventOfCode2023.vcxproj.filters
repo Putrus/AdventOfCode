@@ -33,10 +33,14 @@
     <ClCompile Include="Day2\src\CubeConundrum.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Day3\src\GearRatios.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="Day1\res\day1input.txt" />
     <Text Include="Day2\res\day2input.txt" />
+    <Text Include="Day3\res\day3input.txt" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Common\Decorator\inc\PuzzleComponent.h">
@@ -55,6 +59,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Day2\inc\CubeConundrum.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Day3\inc\GearRatios.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

@@ -10,7 +10,8 @@ namespace aoc2023
     enum class PuzzleName
     {
         Trebuchet = 0,
-        CubeConundrum
+        CubeConundrum,
+        GearRatios
     };
 
     class Puzzles final

@@ -2,8 +2,9 @@
 
 #include "../inc/PuzzleEmpty.h"
 
-#include "../../../Day2/inc/CubeConundrum.h"
 #include "../../../Day1/inc/Trebuchet.h"
+#include "../../../Day2/inc/CubeConundrum.h"
+#include "../../../Day3/inc/GearRatios.h"
 
 namespace aoc2023
 {
@@ -19,6 +20,9 @@ namespace aoc2023
                 break;
             case PuzzleName::CubeConundrum:
                 mPuzzles = std::make_unique<CubeConundrum>(std::move(mPuzzles));
+                break;
+            case PuzzleName::GearRatios:
+                mPuzzles = std::make_unique<GearRatios>(std::move(mPuzzles));
                 break;
             }
         }
