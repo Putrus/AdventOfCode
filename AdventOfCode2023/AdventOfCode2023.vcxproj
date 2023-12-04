@@ -151,12 +151,14 @@
     <ClCompile Include="Day1\src\Trebuchet.cpp" />
     <ClCompile Include="Day2\src\CubeConundrum.cpp" />
     <ClCompile Include="Day3\src\GearRatios.cpp" />
+    <ClCompile Include="Day4\src\Scratchcards.cpp" />
     <ClCompile Include="main2023.cpp" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="Day1\res\day1input.txt" />
     <Text Include="Day2\res\day2input.txt" />
     <Text Include="Day3\res\day3input.txt" />
+    <Text Include="Day4\res\day4input.txt" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Common\Decorator\inc\PuzzleComponent.h" />
@@ -166,6 +168,7 @@
     <ClInclude Include="Day1\inc\Trebuchet.h" />
     <ClInclude Include="Day2\inc\CubeConundrum.h" />
     <ClInclude Include="Day3\inc\GearRatios.h" />
+    <ClInclude Include="Day4\inc\Scratchcards.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

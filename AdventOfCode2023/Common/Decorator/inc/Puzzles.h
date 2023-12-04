@@ -11,7 +11,8 @@ namespace aoc2023
     {
         Trebuchet = 0,
         CubeConundrum,
-        GearRatios
+        GearRatios,
+        Scratchcards
     };
 
     class Puzzles final

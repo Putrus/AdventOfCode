@@ -68,7 +68,7 @@ namespace aoc2023
     std::string GearRatios::getPart2()
     {
         int result = 0;
-        std::map<GearRatios::POINT, std::vector<int>> gear;
+        /*std::map<GearRatios::POINT, std::vector<int>> gear;
 
         for (int i = 0; i < static_cast<int>(schematic.size()); ++i)
         {
@@ -98,7 +98,7 @@ namespace aoc2023
                     gear[pair.first].push_back(std::stoi(number));
                 }
             }
-        }
+        }*/
 
         return std::to_string(result);
     }

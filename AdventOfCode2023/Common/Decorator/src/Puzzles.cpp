@@ -5,6 +5,7 @@
 #include "../../../Day1/inc/Trebuchet.h"
 #include "../../../Day2/inc/CubeConundrum.h"
 #include "../../../Day3/inc/GearRatios.h"
+#include "../../../Day4/inc/Scratchcards.h"
 
 namespace aoc2023
 {
@@ -23,6 +24,9 @@ namespace aoc2023
                 break;
             case PuzzleName::GearRatios:
                 mPuzzles = std::make_unique<GearRatios>(std::move(mPuzzles));
+                break;
+            case PuzzleName::Scratchcards:
+                mPuzzles = std::make_unique<Scratchcards>(std::move(mPuzzles));
                 break;
             }
         }
