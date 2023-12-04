@@ -67,8 +67,8 @@ namespace aoc2023
 
     std::string GearRatios::getPart2()
     {
-        int result = 0;
-        /*std::map<GearRatios::POINT, std::vector<int>> gear;
+        long long result = 0;
+        std::map<GearRatios::POINT, std::vector<int>> gears;
 
         for (int i = 0; i < static_cast<int>(schematic.size()); ++i)
         {
@@ -85,7 +85,7 @@ namespace aoc2023
                     auto pair = getAdjacency(i, j - 1, number.length());
                     if (pair.second == '*')
                     {
-                        gear[pair.first].push_back(std::stoi(number));
+                        gears[pair.first].push_back(std::stoi(number));
                     }
                     number = "";
                 }
@@ -95,12 +95,30 @@ namespace aoc2023
                 auto pair = getAdjacency(i, schematic[i].length() - 1, number.length());
                 if (pair.second == '*')
                 {
-                    gear[pair.first].push_back(std::stoi(number));
+                    gears[pair.first].push_back(std::stoi(number));
                 }
             }
-        }*/
+        }
+
+        for (const auto& gear : gears)
+        {
+            if (gear.second.size() == 2)
+            {
+                result += gear.second[0] * gear.second[1];
+            }
+        }
 
         return std::to_string(result);
+    }
+
+    bool GearRatios::POINT::operator<(const GearRatios::POINT & other) const
+    {
+        return x < other.x || (x == other.x && y < other.y);
+    }
+
+    bool GearRatios::POINT::operator==(const GearRatios::POINT& other) const
+    {
+        return x == other.x && y == other.y;
     }
 
     bool GearRatios::checkAdjacency(int x, int y, size_t length)
@@ -157,7 +175,7 @@ namespace aoc2023
         char s2 = getSymbol(x, y - static_cast<int>(length));
         if (s2 != '.')
         {
-            return { { x, y - static_cast<int>(length) }, s1 };
+            return { { x, y - static_cast<int>(length) }, s2 };
         }
 
         return { { 0, 0 }, '.' };
