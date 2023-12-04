@@ -30,8 +30,6 @@ namespace aoc2023
             bool operator==(const GearRatios::POINT& other) const;
         };
 
-        
-
         std::pair<POINT, char> getAdjacency(int x, int y, size_t length);
         char getSymbol(int i, int j);
 
