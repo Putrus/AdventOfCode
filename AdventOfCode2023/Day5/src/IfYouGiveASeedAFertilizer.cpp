@@ -45,102 +45,76 @@ namespace aoc2023
             }
         }
 
-        fillCorrespondingTypes(file, "soil-to-fertilizer", 0);
-        for (long long initialSeed : initialSeeds)
+        auto readMap = [this, &file, &input](int type, const std::string& end)
         {
-            bool ok = true;
-            for (const auto& types : allTypes)
+            Range range;
+            file >> input;
+            while (!file.eof())
             {
-                if (types->at(0) == initialSeed)
+                file >> input;
+                if (input == end)
                 {
-                    ok = false;
                     break;
                 }
+                range.destination = std::stoll(input);
+                file >> range.source;
+                file >> range.length;
+                maps.at(type).ranges.push_back(range);
             }
-            if (ok)
-            {
-                auto types = std::make_unique<Types>(initialSeed);
-                allTypes.push_back(std::move(types));
-            }
-        }
+        };
 
-        fillCorrespondingTypes(file, "fertilizer-to-water", 1);
-        fillCorrespondingTypes(file, "water-to-light", 2);
-        fillCorrespondingTypes(file, "light-to-temperature", 3);
-        fillCorrespondingTypes(file, "temperature-to-humidity", 4);
-        fillCorrespondingTypes(file, "humidity-to-location", 5);
-        fillCorrespondingTypes(file, "end-of-file", 6);
-
-        file.close();
-        std::sort(allTypes.begin(), allTypes.end(), [](const auto& lhs, const auto& rhs)
-            {
-                return lhs->at(0) < rhs->at(0);
-            });
+        readMap(0, "soil-to-fertilizer");
+        readMap(1, "fertilizer-to-water");
+        readMap(2, "water-to-light");
+        readMap(3, "light-to-temperature");
+        readMap(4, "temperature-to-humidity");
+        readMap(5, "humidity-to-location");
+        readMap(6, "end-of-file");
     }
 
     std::string IfYouGiveASeedAFertilizer::getPart1()
     {
         long long lowestLocation = std::numeric_limits<long long>::max();
-        for (const auto& types : allTypes)
+
+        for (long long initialSeed : initialSeeds)
         {
-            if (types->at(7) < lowestLocation)
+            long long lastCategoryValue = initialSeed;
+            for (size_t i = 0; i < maps.size(); ++i)
             {
-                lowestLocation = types->at(7);
+                lastCategoryValue = maps.at(i).getCorrespondingCategoryNumber(lastCategoryValue);
+            }
+
+            if (lastCategoryValue < lowestLocation)
+            {
+                lowestLocation = lastCategoryValue;
             }
         }
-
+        
         return std::to_string(lowestLocation);
     }
 
     std::string IfYouGiveASeedAFertilizer::getPart2()
     {
-        int result = 0;
+        long long lowestLocation = std::numeric_limits<long long>::max();
         
-        return std::to_string(result);
-    }
-
-    void IfYouGiveASeedAFertilizer::fillCorrespondingTypes(std::ifstream& file,
-        const std::string& end, int type)
-    {
-        std::string input;
-        long long destination;
-        long long source;
-        long long range;
-
-        file >> input;
-        while (!file.eof())
+        int count = 0;
+        for (const auto& initialSeedsRange : initialSeedsRanges)
         {
-            file >> input;
-            if (input == end)
+            for (long long i = initialSeedsRange.first; i < initialSeedsRange.second; ++i)
             {
-                break;
-            }
-            destination = std::stoll(input);
-            file >> source >> range;
-
-            if (type == 0)
-            {
-                for (long long initialSeed : initialSeeds)
+                long long lastCategoryValue = i;
+                for (size_t j = 0; j < maps.size(); ++j)
                 {
-                    if (initialSeed >= source && initialSeed < source + range)
-                    {
-                        auto types = std::make_unique<Types>(0);
-                        types->at(type) = initialSeed;
-                        types->fill(type + 1, destination + (initialSeed - source));
-                        allTypes.push_back(std::move(types));
-                    }
+                    lastCategoryValue = maps.at(j).getCorrespondingCategoryNumber(lastCategoryValue);
                 }
-            }
-            else
-            {
-                for (auto& types : allTypes)
+
+                if (lastCategoryValue < lowestLocation)
                 {
-                    if (types->at(type) >= source && types->at(type) < source + range)
-                    {
-                        types->fill(type + 1, destination + (types->at(type) - source));
-                    }
+                    lowestLocation = lastCategoryValue;
                 }
             }
         }
+
+        return std::to_string(lowestLocation);
     }
 }
