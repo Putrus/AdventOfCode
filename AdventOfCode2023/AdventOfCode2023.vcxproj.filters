@@ -39,12 +39,16 @@
     <ClCompile Include="Day4\src\Scratchcards.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Day5\src\IfYouGiveASeedAFertilizer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="Day1\res\day1input.txt" />
     <Text Include="Day2\res\day2input.txt" />
     <Text Include="Day3\res\day3input.txt" />
     <Text Include="Day4\res\day4input.txt" />
+    <Text Include="Day5\res\day5input.txt" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Common\Decorator\inc\PuzzleComponent.h">
@@ -69,6 +73,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Day4\inc\Scratchcards.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Day5\inc\IfYouGiveASeedAFertilizer.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
