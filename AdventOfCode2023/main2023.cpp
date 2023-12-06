@@ -6,7 +6,8 @@ int main()
         aoc2023::PuzzleName::CubeConundrum,
         aoc2023::PuzzleName::GearRatios,
         aoc2023::PuzzleName::Scratchcards,
-        aoc2023::PuzzleName::IfYouGiveASeedAFertilizer
+        //aoc2023::PuzzleName::IfYouGiveASeedAFertilizer,
+        aoc2023::PuzzleName::WaitForIt
         });
     puzzles.printAnswers();
     return 0;

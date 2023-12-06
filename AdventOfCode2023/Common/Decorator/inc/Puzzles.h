@@ -13,7 +13,8 @@ namespace aoc2023
         CubeConundrum,
         GearRatios,
         Scratchcards,
-        IfYouGiveASeedAFertilizer
+        IfYouGiveASeedAFertilizer,
+        WaitForIt
     };
 
     class Puzzles final
