@@ -14,7 +14,8 @@ namespace aoc2023
         GearRatios,
         Scratchcards,
         IfYouGiveASeedAFertilizer,
-        WaitForIt
+        WaitForIt,
+        CamelCards
     };
 
     class Puzzles final

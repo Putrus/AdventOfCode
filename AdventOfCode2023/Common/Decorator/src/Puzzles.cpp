@@ -8,6 +8,7 @@
 #include "../../../Day4/inc/Scratchcards.h"
 #include "../../../Day5/inc/IfYouGiveASeedAFertilizer.h"
 #include "../../../Day6/inc/WaitForIt.h"
+#include "../../../Day7/inc/CamelCards.h"
 
 namespace aoc2023
 {
@@ -35,6 +36,9 @@ namespace aoc2023
                 break;
             case PuzzleName::WaitForIt:
                 mPuzzles = std::make_unique<WaitForIt>(std::move(mPuzzles));
+                break;
+            case PuzzleName::CamelCards:
+                mPuzzles = std::make_unique<CamelCards>(std::move(mPuzzles));
                 break;
             }
         }

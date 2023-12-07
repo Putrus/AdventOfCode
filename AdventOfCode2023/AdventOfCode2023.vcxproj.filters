@@ -45,6 +45,9 @@
     <ClCompile Include="Day6\src\WaitForIt.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Day7\src\CamelCards.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="Day1\res\day1input.txt" />
@@ -53,6 +56,7 @@
     <Text Include="Day4\res\day4input.txt" />
     <Text Include="Day5\res\day5input.txt" />
     <Text Include="Day6\res\day6input.txt" />
+    <Text Include="Day7\res\day7input.txt" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Common\Decorator\inc\PuzzleComponent.h">
@@ -83,6 +87,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Day6\inc\WaitForIt.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Day7\inc\CamelCards.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
