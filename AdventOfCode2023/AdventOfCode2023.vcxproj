@@ -155,6 +155,7 @@
     <ClCompile Include="Day5\src\IfYouGiveASeedAFertilizer.cpp" />
     <ClCompile Include="Day6\src\WaitForIt.cpp" />
     <ClCompile Include="Day7\src\CamelCards.cpp" />
+    <ClCompile Include="Day8\src\HauntedWasteland.cpp" />
     <ClCompile Include="main2023.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -165,6 +166,7 @@
     <Text Include="Day5\res\day5input.txt" />
     <Text Include="Day6\res\day6input.txt" />
     <Text Include="Day7\res\day7input.txt" />
+    <Text Include="Day8\res\day8input.txt" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Common\Decorator\inc\PuzzleComponent.h" />
@@ -178,6 +180,7 @@
     <ClInclude Include="Day5\inc\IfYouGiveASeedAFertilizer.h" />
     <ClInclude Include="Day6\inc\WaitForIt.h" />
     <ClInclude Include="Day7\inc\CamelCards.h" />
+    <ClInclude Include="Day8\inc\HauntedWasteland.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

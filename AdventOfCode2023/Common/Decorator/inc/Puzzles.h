@@ -15,7 +15,8 @@ namespace aoc2023
         Scratchcards,
         IfYouGiveASeedAFertilizer,
         WaitForIt,
-        CamelCards
+        CamelCards,
+        HauntedWasteland
     };
 
     class Puzzles final
