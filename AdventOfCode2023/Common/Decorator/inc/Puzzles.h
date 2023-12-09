@@ -16,7 +16,8 @@ namespace aoc2023
         IfYouGiveASeedAFertilizer,
         WaitForIt,
         CamelCards,
-        HauntedWasteland
+        HauntedWasteland,
+        MirageMaintenance
     };
 
     class Puzzles final

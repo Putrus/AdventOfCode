@@ -10,7 +10,8 @@ int main()
         //aoc2023::PuzzleName::IfYouGiveASeedAFertilizer,
         //aoc2023::PuzzleName::WaitForIt,
         //aoc2023::PuzzleName::CamelCards,
-        aoc2023::PuzzleName::HauntedWasteland
+        //aoc2023::PuzzleName::HauntedWasteland,
+        aoc2023::PuzzleName::MirageMaintenance
         });
     puzzles.printAnswers();
     return 0;
