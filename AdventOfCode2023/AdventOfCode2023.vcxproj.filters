@@ -54,6 +54,9 @@
     <ClCompile Include="Day9\src\MirageMaintenance.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Day10\src\PipeMaze.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="Day1\res\day1input.txt" />
@@ -65,6 +68,7 @@
     <Text Include="Day7\res\day7input.txt" />
     <Text Include="Day8\res\day8input.txt" />
     <Text Include="Day9\res\day9input.txt" />
+    <Text Include="Day10\res\day10input.txt" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Common\Decorator\inc\PuzzleComponent.h">
@@ -104,6 +108,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Day9\inc\MirageMaintenance.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Day10\inc\PipeMaze.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

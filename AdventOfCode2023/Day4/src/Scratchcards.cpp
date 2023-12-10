@@ -87,7 +87,7 @@ namespace aoc2023
     {
         int result = 0;
         std::vector<int> cards = std::vector<int>(scratchcards.size(), 1);
-        for (size_t i = 0; i < scratchcards.size(); ++i)
+        for (int i = 0; i < static_cast<int>(scratchcards.size()); ++i)
         {
             int quantity = 0;
             for (int number : scratchcards[i].first)

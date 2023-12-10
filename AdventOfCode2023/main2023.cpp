@@ -11,7 +11,8 @@ int main()
         //aoc2023::PuzzleName::WaitForIt,
         //aoc2023::PuzzleName::CamelCards,
         //aoc2023::PuzzleName::HauntedWasteland,
-        aoc2023::PuzzleName::MirageMaintenance
+        //aoc2023::PuzzleName::MirageMaintenance,
+        aoc2023::PuzzleName::PipeMaze
         });
     puzzles.printAnswers();
     return 0;

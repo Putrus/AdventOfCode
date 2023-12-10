@@ -70,7 +70,7 @@ namespace aoc2023
         long long totalWinnings = 0;
         for (long long rank = 0; rank < static_cast<long long>(hands.size()); ++rank)
         {
-            totalWinnings += hands[rank].second * (rank + 1);
+            totalWinnings += hands[static_cast<unsigned int>(rank)].second * (rank + 1);
         }
         return std::to_string(totalWinnings);
     }
@@ -110,7 +110,7 @@ namespace aoc2023
         long long totalWinnings = 0;
         for (long long rank = 0; rank < static_cast<long long>(hands.size()); ++rank)
         {
-            totalWinnings += hands[rank].second * (rank + 1);
+            totalWinnings += hands[static_cast<unsigned int>(rank)].second * (rank + 1);
         }
         return std::to_string(totalWinnings);
     }

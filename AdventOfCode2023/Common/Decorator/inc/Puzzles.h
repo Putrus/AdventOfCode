@@ -17,7 +17,8 @@ namespace aoc2023
         WaitForIt,
         CamelCards,
         HauntedWasteland,
-        MirageMaintenance
+        MirageMaintenance,
+        PipeMaze
     };
 
     class Puzzles final
