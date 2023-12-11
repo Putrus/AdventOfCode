@@ -149,6 +149,7 @@
     <ClCompile Include="Common\Decorator\src\PuzzleDecorator.cpp" />
     <ClCompile Include="Common\Decorator\src\PuzzleEmpty.cpp" />
     <ClCompile Include="Day10\src\PipeMaze.cpp" />
+    <ClCompile Include="Day11\src\CosmicExpansion.cpp" />
     <ClCompile Include="Day1\src\Trebuchet.cpp" />
     <ClCompile Include="Day2\src\CubeConundrum.cpp" />
     <ClCompile Include="Day3\src\GearRatios.cpp" />
@@ -162,6 +163,7 @@
   </ItemGroup>
   <ItemGroup>
     <Text Include="Day10\res\day10input.txt" />
+    <Text Include="Day11\res\day11input.txt" />
     <Text Include="Day1\res\day1input.txt" />
     <Text Include="Day2\res\day2input.txt" />
     <Text Include="Day3\res\day3input.txt" />
@@ -178,6 +180,7 @@
     <ClInclude Include="Common\Decorator\inc\PuzzleEmpty.h" />
     <ClInclude Include="Common\Decorator\inc\Puzzles.h" />
     <ClInclude Include="Day10\inc\PipeMaze.h" />
+    <ClInclude Include="Day11\inc\CosmicExpansion.h" />
     <ClInclude Include="Day1\inc\Trebuchet.h" />
     <ClInclude Include="Day2\inc\CubeConundrum.h" />
     <ClInclude Include="Day3\inc\GearRatios.h" />

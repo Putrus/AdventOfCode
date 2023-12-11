@@ -12,6 +12,7 @@
 #include "../../../Day8/inc/HauntedWasteland.h"
 #include "../../../Day9/inc/MirageMaintenance.h"
 #include "../../../Day10/inc/PipeMaze.h"
+#include "../../../Day11/inc/CosmicExpansion.h"
 
 namespace aoc2023
 {
@@ -51,6 +52,9 @@ namespace aoc2023
                 break;
             case PuzzleName::PipeMaze:
                 mPuzzles = std::make_unique<PipeMaze>(std::move(mPuzzles));
+                break;
+            case PuzzleName::CosmicExpansion:
+                mPuzzles = std::make_unique<CosmicExpansion>(std::move(mPuzzles));
                 break;
             }
         }
