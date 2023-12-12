@@ -13,7 +13,8 @@ int main()
         //aoc2023::PuzzleName::HauntedWasteland,
         //aoc2023::PuzzleName::MirageMaintenance,
         //aoc2023::PuzzleName::PipeMaze,
-        aoc2023::PuzzleName::CosmicExpansion
+        //aoc2023::PuzzleName::CosmicExpansion,
+        aoc2023::PuzzleName::HotSprings
         });
     puzzles.printAnswers();
     return 0;

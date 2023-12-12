@@ -60,6 +60,9 @@
     <ClCompile Include="Day11\src\CosmicExpansion.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Day12\src\HotSprings.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="Day1\res\day1input.txt" />
@@ -73,6 +76,7 @@
     <Text Include="Day9\res\day9input.txt" />
     <Text Include="Day10\res\day10input.txt" />
     <Text Include="Day11\res\day11input.txt" />
+    <Text Include="Day12\res\day12input.txt" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Common\Decorator\inc\PuzzleComponent.h">
@@ -118,6 +122,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Day11\inc\CosmicExpansion.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Day12\inc\HotSprings.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

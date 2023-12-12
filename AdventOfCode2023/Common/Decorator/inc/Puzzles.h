@@ -19,7 +19,8 @@ namespace aoc2023
         HauntedWasteland,
         MirageMaintenance,
         PipeMaze,
-        CosmicExpansion
+        CosmicExpansion,
+        HotSprings
     };
 
     class Puzzles final

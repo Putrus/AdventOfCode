@@ -13,6 +13,7 @@
 #include "../../../Day9/inc/MirageMaintenance.h"
 #include "../../../Day10/inc/PipeMaze.h"
 #include "../../../Day11/inc/CosmicExpansion.h"
+#include "../../../Day12/inc/HotSprings.h"
 
 namespace aoc2023
 {
@@ -55,6 +56,9 @@ namespace aoc2023
                 break;
             case PuzzleName::CosmicExpansion:
                 mPuzzles = std::make_unique<CosmicExpansion>(std::move(mPuzzles));
+                break;
+            case PuzzleName::HotSprings:
+                mPuzzles = std::make_unique<HotSprings>(std::move(mPuzzles));
                 break;
             }
         }
