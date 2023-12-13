@@ -14,6 +14,7 @@
 #include "../../../Day10/inc/PipeMaze.h"
 #include "../../../Day11/inc/CosmicExpansion.h"
 #include "../../../Day12/inc/HotSprings.h"
+#include "../../../Day13/inc/PointOfIncidence.h"
 
 namespace aoc2023
 {
@@ -60,6 +61,9 @@ namespace aoc2023
             case PuzzleName::HotSprings:
                 mPuzzles = std::make_unique<HotSprings>(std::move(mPuzzles));
                 break;
+            case PuzzleName::PointOfIncidence:
+               mPuzzles = std::make_unique<PointOfIncidence>(std::move(mPuzzles));
+               break;
             }
         }
     }

@@ -20,7 +20,8 @@ namespace aoc2023
         MirageMaintenance,
         PipeMaze,
         CosmicExpansion,
-        HotSprings
+        HotSprings,
+        PointOfIncidence
     };
 
     class Puzzles final

@@ -14,7 +14,8 @@ int main()
         //aoc2023::PuzzleName::MirageMaintenance,
         //aoc2023::PuzzleName::PipeMaze,
         //aoc2023::PuzzleName::CosmicExpansion,
-        aoc2023::PuzzleName::HotSprings
+        //aoc2023::PuzzleName::HotSprings,
+        aoc2023::PuzzleName::PointOfIncidence
         });
     puzzles.printAnswers();
     return 0;
