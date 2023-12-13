@@ -23,6 +23,9 @@ namespace aoc2023
         int getHorizontalReflection(const std::vector<std::string>& pattern) const;
         int getVerticalReflection(const std::vector<std::string>& pattern) const;
 
+        int getSmudgeHorizontalReflection(const std::vector<std::string>& pattern) const;
+        int getSmudgeVerticalReflection(const std::vector<std::string>& pattern) const;
+
         std::vector<std::string> getTransposePattern(const std::vector<std::string>& pattern) const;
     };
 }

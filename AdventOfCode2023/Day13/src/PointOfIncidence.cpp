@@ -65,7 +65,24 @@ namespace aoc2023
 
     std::string PointOfIncidence::getPart2()
     {
-        return std::to_string(0);
+        int sum = 0;
+        for (const auto& pattern : patterns)
+        {
+            int horizontalReflection = getSmudgeHorizontalReflection(pattern);
+            if (horizontalReflection != -1)
+            {
+                sum += (horizontalReflection + 1) * 100;
+                continue;
+            }
+
+            int verticalReflection = getSmudgeVerticalReflection(pattern);
+            if (verticalReflection == -1)
+            {
+                std::cerr << "Something wrong, vertical reflection shouldn't be -1" << std::endl;
+            }
+            sum += verticalReflection + 1;
+        }
+        return std::to_string(sum);
     }
 
     int PointOfIncidence::getHorizontalReflection(const std::vector<std::string>& pattern) const
@@ -112,5 +129,49 @@ namespace aoc2023
             transposePattern.push_back(row);
         }
         return transposePattern;
+    }
+
+    int PointOfIncidence::getSmudgeHorizontalReflection(const std::vector<std::string>& pattern) const
+    {
+        for (int i = 0; i < static_cast<int>(pattern.size()) - 1; ++i)
+        {
+            int l = i;
+            int r = i + 1;
+            bool isPerfectReflection = true;
+            int smudges = 0;
+            while (l > -1 && r < static_cast<int>(pattern.size()))
+            {
+                for (size_t j = 0; j < pattern[l].size(); ++j)
+                {
+                    if (pattern[l][j] != pattern[r][j])
+                    {
+                        ++smudges;
+                        if (smudges > 1)
+                        {
+                            isPerfectReflection = false;
+                            break;
+                        }
+                    }
+                }
+                if (smudges > 1)
+                {
+                    isPerfectReflection = false;
+                    break;
+                }
+                --l;
+                ++r;
+            }
+            if (smudges == 1 && isPerfectReflection)
+            {
+                return i;
+            }
+        }
+
+        return -1;
+    }
+
+    int PointOfIncidence::getSmudgeVerticalReflection(const std::vector<std::string>& pattern) const
+    {
+        return getSmudgeHorizontalReflection(getTransposePattern(pattern));
     }
 }
