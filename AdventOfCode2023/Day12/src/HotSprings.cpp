@@ -148,7 +148,7 @@ namespace aoc2023
                     unknownPositions.push_back(i);
                 }
             }
-            int cases = std::pow(2, unknownPositions.size());
+            int cases = static_cast<int>(std::pow(2, unknownPositions.size()));
             for (int i = 0; i < cases; ++i)
             {
                 int bitset = i;

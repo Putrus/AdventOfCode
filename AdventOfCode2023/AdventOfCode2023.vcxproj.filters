@@ -63,6 +63,9 @@
     <ClCompile Include="Day12\src\HotSprings.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Day13\src\PointOfIncidence.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="Day1\res\day1input.txt" />
@@ -77,6 +80,7 @@
     <Text Include="Day10\res\day10input.txt" />
     <Text Include="Day11\res\day11input.txt" />
     <Text Include="Day12\res\day12input.txt" />
+    <Text Include="Day13\res\day13input.txt" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Common\Decorator\inc\PuzzleComponent.h">
@@ -125,6 +129,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Day12\inc\HotSprings.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Day13\inc\PointOfIncidence.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
