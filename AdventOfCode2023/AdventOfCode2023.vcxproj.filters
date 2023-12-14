@@ -66,6 +66,9 @@
     <ClCompile Include="Day13\src\PointOfIncidence.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Day14\src\ParabolicReflectorDish.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="Day1\res\day1input.txt" />
@@ -81,6 +84,7 @@
     <Text Include="Day11\res\day11input.txt" />
     <Text Include="Day12\res\day12input.txt" />
     <Text Include="Day13\res\day13input.txt" />
+    <Text Include="Day14\res\day14input.txt" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Common\Decorator\inc\PuzzleComponent.h">
@@ -132,6 +136,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Day13\inc\PointOfIncidence.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Day14\inc\ParabolicReflectorDish.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

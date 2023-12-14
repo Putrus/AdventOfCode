@@ -21,7 +21,8 @@ namespace aoc2023
         PipeMaze,
         CosmicExpansion,
         HotSprings,
-        PointOfIncidence
+        PointOfIncidence,
+        ParabolicReflectorDish
     };
 
     class Puzzles final
