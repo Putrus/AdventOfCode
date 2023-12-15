@@ -18,9 +18,7 @@ namespace aoc2023
         virtual std::string getPart2() override;
 
     private:
-        std::vector<int> getGroup(const std::string& row) const;
-        int getBit(int number, int n) const;
-        long long getCounts(const std::vector<std::pair<std::string, std::vector<int>>>& springs) const;
+        long long getCounts(const std::pair<std::string, std::vector<int>>& spring) const;
 
         std::vector<std::pair<std::string, std::vector<int>>> springs;
         std::vector<std::pair<std::string, std::vector<int>>> unfoldedSprings;

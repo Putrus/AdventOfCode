@@ -37,43 +37,15 @@ namespace aoc2023
                 break;
             }
             std::string unfoldedRow;
-            std::string record;
-            for (size_t i = 0; i < row.size(); ++i)
-            {
-                if (row[i] != '?')
-                {
-                    record += row[i];
-                }
-                else if (!record.empty())
-                {
-                    for (int j = 0; j < 4; ++j)
-                    {
-                        unfoldedRow += record;
-                        for (size_t k = 0; k < record.size(); ++k)
-                        {
-                            unfoldedRow += '?';
-                        }
-                    }
-                    unfoldedRow += record;
-                    record = "";
-                }
-                else
-                {
-                    unfoldedRow += '?';
-                }
-            }
 
-            if (!record.empty())
+            if (!row.empty())
             {
+                unfoldedRow += row;
                 for (int j = 0; j < 4; ++j)
                 {
-                    unfoldedRow += record;
-                    for (size_t k = 0; k < record.size(); ++k)
-                    {
-                        unfoldedRow += '?';
-                    }
+                    unfoldedRow += "?";
+                    unfoldedRow += row;
                 }
-                unfoldedRow += record;
             }
 
             file >> strDamaged;
@@ -85,8 +57,18 @@ namespace aoc2023
                 ss >> number;
                 group.push_back(number);
             }
+
+            std::vector<int> unfoldedGroup = group;
+            for (int i = 0; i < 4; ++i)
+            {
+                for (int number : group)
+                {
+                    unfoldedGroup.push_back(number);
+                }
+            }
+
             springs.push_back({ row, group });
-            unfoldedSprings.push_back({ unfoldedRow, group });
+            unfoldedSprings.push_back({ unfoldedRow, unfoldedGroup });
         }
 
         file.close();
@@ -94,95 +76,86 @@ namespace aoc2023
 
     std::string HotSprings::getPart1()
     {
-        return std::to_string(getCounts(springs));
+        long long arrangementCountsSum = 0;
+        for (const auto& spring : springs)
+        {
+            long long arrangementCounts = getCounts(spring);
+            arrangementCountsSum += arrangementCounts;
+        }
+        return std::to_string(arrangementCountsSum);
     }
 
     std::string HotSprings::getPart2()
     {
-        return std::to_string(getCounts(unfoldedSprings));
+        long long arrangementCountsSum = 0;
+        for (const auto& spring : unfoldedSprings)
+        {
+            long long arrangementCounts = getCounts(spring);
+            arrangementCountsSum += arrangementCounts;
+        }
+        return std::to_string(arrangementCountsSum);
     }
 
-    std::vector<int> HotSprings::getGroup(const std::string& row) const
+    long long HotSprings::getCounts(const std::pair<std::string, std::vector<int>>& pair) const
     {
-        std::vector<int> group;
-        int count = 0;
-        for (char c : row)
+        std::string spring = "." + pair.first + ".";
+        std::string group;
+        for (int value : pair.second)
         {
-            if (c == '.')
+            group += ".";
+            for (int i = 0; i < value; ++i)
             {
-                if (count != 0)
-                {
-                    group.push_back(count);
-                }
-                count = 0;
-            }
-            else
-            {
-                ++count;
+                group += "#";
             }
         }
-        if (count != 0)
+        group += ".";
+
+        std::vector<std::vector<long long>> dp;
+        for (size_t i = 0; i < group.size(); ++i)
         {
-            group.push_back(count);
+            std::vector<long long> row(spring.size(), 0);
+            dp.push_back(row);
         }
-        return group;
-    }
+        dp[0][0] = 1;
 
-    int HotSprings::getBit(int number, int n) const
-    {
-        return (number >> n) & 1;
-    }
-
-    long long HotSprings::getCounts(const std::vector<std::pair<std::string, std::vector<int>>>& springs) const
-    {
-        long long counts = 0;
-        int counter = 0;
-        for (const auto& spring : springs)
+        for (int i = 0; i < static_cast<int>(dp.size()); ++i)
         {
-            std::cout << counter++ << "/" << springs.size() << std::endl;
-            std::vector<size_t> unknownPositions;
-            for (size_t i = 0; i < spring.first.size(); ++i)
+            for (int j = 0; j < static_cast<int>(dp[i].size()); ++j)
             {
-                if (spring.first[i] == '?')
+                if (i == 0 && j == 0)
                 {
-                    unknownPositions.push_back(i);
+                    continue;
                 }
-            }
-            int cases = static_cast<int>(std::pow(2, unknownPositions.size()));
-            for (int i = 0; i < cases; ++i)
-            {
-                int bitset = i;
-                std::string rowCopy = spring.first;
-                for (int j = 0; j < static_cast<int>(unknownPositions.size()); ++j)
+
+                long long dpValue = 0;
+                if (group[i] == '.')
                 {
-                    if (getBit(bitset, j) == 1)
+                    if (spring[j] == '.' || spring[j] == '?')
                     {
-                        rowCopy[unknownPositions[j]] = '#';
-                    }
-                    else
-                    {
-                        rowCopy[unknownPositions[j]] = '.';
-                    }
-                }
-                auto group = getGroup(rowCopy);
-                if (group.size() == spring.second.size())
-                {
-                    bool sameGroup = true;
-                    for (size_t k = 0; k < group.size(); ++k)
-                    {
-                        if (group[k] != spring.second[k])
+                        if (j > 0)
                         {
-                            sameGroup = false;
+                            dpValue += dp[i][j - 1];
+                            if (i > 0)
+                            {
+                                dpValue += dp[i - 1][j - 1];
+                            }
                         }
                     }
-
-                    if (sameGroup)
+                }
+                else
+                {
+                    if (spring[j] == '#' || spring[j] == '?')
                     {
-                        ++counts;
+                        if (i > 0 && j > 0)
+                        {
+                            dpValue += dp[i - 1][j - 1];
+                        }
                     }
                 }
+                dp[i][j] = dpValue;
             }
         }
-        return counts;
+
+        return dp[dp.size() - 1][dp[0].size() - 1];
     }
 }
