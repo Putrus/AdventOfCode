@@ -16,6 +16,7 @@
 #include "../../../Day12/inc/HotSprings.h"
 #include "../../../Day13/inc/PointOfIncidence.h"
 #include "../../../Day14/inc/ParabolicReflectorDish.h"
+#include "../../../Day15/inc/LensLibrary.h"
 
 namespace aoc2023
 {
@@ -67,6 +68,9 @@ namespace aoc2023
                break;
             case PuzzleName::ParabolicReflectorDish:
                 mPuzzles = std::make_unique<ParabolicReflectorDish>(std::move(mPuzzles));
+                break;
+            case PuzzleName::LensLibrary:
+                mPuzzles = std::make_unique<LensLibrary>(std::move(mPuzzles));
                 break;
             }
         }

@@ -16,7 +16,8 @@ int main()
         //aoc2023::PuzzleName::CosmicExpansion,
         //aoc2023::PuzzleName::HotSprings,
         //aoc2023::PuzzleName::PointOfIncidence,
-        aoc2023::PuzzleName::ParabolicReflectorDish
+        //aoc2023::PuzzleName::ParabolicReflectorDish,
+        aoc2023::PuzzleName::LensLibrary
         });
     puzzles.printAnswers();
     return 0;

@@ -22,7 +22,8 @@ namespace aoc2023
         CosmicExpansion,
         HotSprings,
         PointOfIncidence,
-        ParabolicReflectorDish
+        ParabolicReflectorDish,
+        LensLibrary
     };
 
     class Puzzles final
