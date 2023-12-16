@@ -17,7 +17,8 @@ int main()
         //aoc2023::PuzzleName::HotSprings,
         //aoc2023::PuzzleName::PointOfIncidence,
         //aoc2023::PuzzleName::ParabolicReflectorDish,
-        aoc2023::PuzzleName::LensLibrary
+        //aoc2023::PuzzleName::LensLibrary,
+        aoc2023::PuzzleName::TheFloorWillBeLava
         });
     puzzles.printAnswers();
     return 0;

@@ -23,7 +23,8 @@ namespace aoc2023
         HotSprings,
         PointOfIncidence,
         ParabolicReflectorDish,
-        LensLibrary
+        LensLibrary,
+        TheFloorWillBeLava
     };
 
     class Puzzles final
