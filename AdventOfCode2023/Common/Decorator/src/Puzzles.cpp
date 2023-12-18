@@ -18,6 +18,7 @@
 #include "../../../Day14/inc/ParabolicReflectorDish.h"
 #include "../../../Day15/inc/LensLibrary.h"
 #include "../../../Day16/inc/TheFloorWillBeLava.h"
+#include "../../../Day17/inc/ClumsyCrucible.h"
 
 namespace aoc2023
 {
@@ -75,6 +76,9 @@ namespace aoc2023
                 break;
             case PuzzleName::TheFloorWillBeLava:
                 mPuzzles = std::make_unique<TheFloorWillBeLava>(std::move(mPuzzles));
+                break;
+            case PuzzleName::ClumsyCrucible:
+                mPuzzles = std::make_unique<ClumsyCrucible>(std::move(mPuzzles));
                 break;
             }
         }

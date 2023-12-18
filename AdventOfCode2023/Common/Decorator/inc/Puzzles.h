@@ -24,7 +24,8 @@ namespace aoc2023
         PointOfIncidence,
         ParabolicReflectorDish,
         LensLibrary,
-        TheFloorWillBeLava
+        TheFloorWillBeLava,
+        ClumsyCrucible
     };
 
     class Puzzles final
