@@ -18,6 +18,24 @@ namespace aoc2023
         virtual std::string getPart2() override;
 
     private:
+        struct Pos
+        {
+            int x;
+            int y;
+            bool operator==(const Pos& other) const
+            {
+                return x == other.x && y == other.y;
+            }
+        };
+
+        struct Move
+        {
+            Pos pos;
+            Pos dir;
+            int heatLoss = 0;
+            int straight = 0;
+        };
+
         std::vector<std::vector<int>> map;
     };
 }

@@ -58,10 +58,10 @@ namespace aoc2023
         S.insert(*Q.begin());
         Q.erase(std::make_pair<int, int>(0, 0));
         d[0][0] = map[0][0];
-        while (!Q.empty())
+        /*while (!Q.empty())
         {
             
-        }
+        }*/
 
 
         return std::to_string(0);

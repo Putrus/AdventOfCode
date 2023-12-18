@@ -156,6 +156,7 @@
     <ClCompile Include="Day15\src\LensLibrary.cpp" />
     <ClCompile Include="Day16\src\TheFloorWillBeLava.cpp" />
     <ClCompile Include="Day17\src\ClumsyCrucible.cpp" />
+    <ClCompile Include="Day18\src\LavaductLagoon.cpp" />
     <ClCompile Include="Day1\src\Trebuchet.cpp" />
     <ClCompile Include="Day2\src\CubeConundrum.cpp" />
     <ClCompile Include="Day3\src\GearRatios.cpp" />
@@ -176,6 +177,7 @@
     <Text Include="Day15\res\day15input.txt" />
     <Text Include="Day16\res\day16input.txt" />
     <Text Include="Day17\res\day17input.txt" />
+    <Text Include="Day18\res\day18input.txt" />
     <Text Include="Day1\res\day1input.txt" />
     <Text Include="Day2\res\day2input.txt" />
     <Text Include="Day3\res\day3input.txt" />
@@ -199,6 +201,7 @@
     <ClInclude Include="Day15\inc\LensLibrary.h" />
     <ClInclude Include="Day16\inc\TheFloorWillBeLava.h" />
     <ClInclude Include="Day17\inc\ClumsyCrucible.h" />
+    <ClInclude Include="Day18\inc\LavaductLagoon.h" />
     <ClInclude Include="Day1\inc\Trebuchet.h" />
     <ClInclude Include="Day2\inc\CubeConundrum.h" />
     <ClInclude Include="Day3\inc\GearRatios.h" />

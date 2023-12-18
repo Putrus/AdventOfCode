@@ -25,7 +25,8 @@ namespace aoc2023
         ParabolicReflectorDish,
         LensLibrary,
         TheFloorWillBeLava,
-        ClumsyCrucible
+        ClumsyCrucible,
+        LavaductLagoon
     };
 
     class Puzzles final

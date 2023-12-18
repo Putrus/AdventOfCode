@@ -86,8 +86,8 @@ namespace aoc2023
 
     void TheFloorWillBeLava::energize(Beam beam)
     {
-        while (beam.x >= 0 && beam.x < energized[0].size() &&
-            beam.y >= 0 && beam.y < energized.size() &&
+        while (beam.x >= 0 && beam.x < static_cast<int>(energized[0].size()) &&
+            beam.y >= 0 && beam.y < static_cast<int>(energized.size()) &&
             std::find_if(beamHistory.begin(), beamHistory.end(), [beam](const auto& beamH)
                 {
                     return beamH.x == beam.x && beamH.y == beam.y &&

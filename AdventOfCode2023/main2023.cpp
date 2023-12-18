@@ -19,7 +19,8 @@ int main()
         //aoc2023::PuzzleName::ParabolicReflectorDish,
         //aoc2023::PuzzleName::LensLibrary,
         //aoc2023::PuzzleName::TheFloorWillBeLava,
-        aoc2023::PuzzleName::ClumsyCrucible
+        aoc2023::PuzzleName::ClumsyCrucible,
+        aoc2023::PuzzleName::LavaductLagoon
         });
     puzzles.printAnswers();
     return 0;

@@ -78,6 +78,9 @@
     <ClCompile Include="Day17\src\ClumsyCrucible.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Day18\src\LavaductLagoon.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="Day1\res\day1input.txt" />
@@ -97,6 +100,7 @@
     <Text Include="Day15\res\day15input.txt" />
     <Text Include="Day16\res\day16input.txt" />
     <Text Include="Day17\res\day17input.txt" />
+    <Text Include="Day18\res\day18input.txt" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Common\Decorator\inc\PuzzleComponent.h">
@@ -160,6 +164,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Day17\inc\ClumsyCrucible.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Day18\inc\LavaductLagoon.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
