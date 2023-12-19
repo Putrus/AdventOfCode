@@ -201,7 +201,7 @@ namespace aoc2023
         int result = 0;
         for (int i = 0; i < static_cast<int>(hex.size()); ++i)
         {
-            int power = std::pow(16, static_cast<int>(hex.size()) - i - 1);
+            int power = static_cast<int>(std::pow(16, static_cast<int>(hex.size()) - i - 1));
             if (hex[i] >= 'a')
             {
                 result += power * (hex[i] - 'a' + 10);
